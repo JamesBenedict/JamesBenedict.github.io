@@ -1,14 +1,6 @@
 /*timeline stuff*/
-.timeline, .timeline-inverted{
-  color: #7f8c8d;
-}
-.timeline h2{
-  font-size: 2.4em;
-  line-height: 28px;
-  margin-bottom: 25px;
-  margin-top: 15px;
-  color: #4d4d4d;
-}
+.timeline-container {
+  color: blue; }
 
 .timeline {
   list-style: none;
@@ -88,13 +80,12 @@
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #be4c39;
+  background-color: #999999;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-   }
+  border-bottom-left-radius: 50%; }
 
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right; }
@@ -112,29 +103,28 @@
   right: auto; }
 
 .timeline-badge.primary {
-  background-color: #be4c39 !important; }
+  background-color: #2e6da4 !important; }
 
 .timeline-badge.success {
-  background-color: #be4c39 !important; }
+  background-color: #3f903f !important; }
 
 .timeline-badge.warning {
-  background-color: #be4c39 !important; }
+  background-color: #f0ad4e !important; }
 
 .timeline-badge.danger {
-  background-color: #be4c39 !important; }
+  background-color: #d9534f !important; }
 
 .timeline-badge.info {
-  background-color: #be4c39 !important; }
+  background-color: #5bc0de !important; }
 
 .timeline-title {
   margin-top: 0;
   color: inherit; }
 
+  .timeline-title h4{
+    font-size: 5em;
+  }
 
-.timeline-title {
-  font-size: 1.5em;
-  font-weight: 700;
-}
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0; }
