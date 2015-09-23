@@ -36,7 +36,7 @@ a {
 }
 
 a:hover{
-  color: #be4c39;
+  color: #be4c39 !important;
   text-decoration: none;
 }
 
@@ -44,10 +44,16 @@ a:hover{
   color: #585858;
 }
 
-.btn:hover, .btn:active{
+.btn:hover{
   background-color: #be4c39;
   color: white;
 }
+
+.btn:active{
+  background-color: #be4c39;
+  color: white;
+}
+
 
 
 
@@ -132,8 +138,13 @@ color: #585858;
 
 .bio{
   text-align: center;
+  font-size: 1.2em;
    
   }
+
+.bio a{
+  color: #be4c39;
+}
 
 .arrows {
   text-align: center;
