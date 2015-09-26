@@ -78,29 +78,30 @@ footer{
   padding-bottom: .2em;
 }
 
-.map {
+.nav {
 	text-align: center;	
   padding-bottom: 1em;
+  margin: 0, auto;
 }
 
-.map ul {
+.nav ul {
 	list-style-type: none;
   }
 
-  .map li{
+  .nav li{
   	padding: 10px;
   }
 
-  .map li{
+  .nav li{
   	display: inline;
   }
 
-  .map a{
+  .nav a{
   	text-decoration: none;
   	color: #585858;;
   }
 
-  .map a:hover{
+  .nav a:hover{
     color: #be4c39;
   }
 
