@@ -29,6 +29,8 @@ h4, h5, h6{
   text color: #585847;
 }
 
+
+
 p, li{
 	font-family: 'Lato', sans-serif;
 }
@@ -169,6 +171,7 @@ color: #585847;
 
 .rw-info {
   color: #585847;
+  margin-top: 1em;
 }
 
 .recent-work-list a{
@@ -381,6 +384,7 @@ hr{
   margin-bottom: 30px;
 }
 
+
 @media all and (max-width: 38em) {
 
 .timeline > li > .timeline-panel {
@@ -462,8 +466,8 @@ hr{
 
 
 @media all and (min-width: 40em) {
-  .rw-info h5{
-  margin-top: 0em;
+  .rw-info{
+  margin-top: 1em;
 }
 
 .timeline > li > .timeline-panel {
@@ -474,7 +478,7 @@ hr{
 
 @media all and (min-width: 54em) {
 
-.rw-info h5{
+.rw-info{
   margin-top: 0em;
 }
 
