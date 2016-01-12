@@ -5,13 +5,13 @@ img {
 /*text*/
 h1, h2, h3{
   font-family: 'Abril Fatface', cursive;
-  text color: #585847;
+  text color: #4d4d4d;
 
 }
 
 h1{
   font-size: 4em;
-  color: #585847;
+  color: #4d4d4d;
   letter-spacing: .04em;
 }
 
@@ -21,12 +21,12 @@ h2{
 
 h3{
   font-size: 3em;
-  color: #585847;
+  color: #4d4d4d;
 }
 
 h4, h5, h6{
   font-family: 'lato', sans-serif;
-  text color: #585847;
+  text color: #4d4d4d;
 }
 
 
@@ -38,7 +38,7 @@ p, li{
 /*Links*/
 a {
   text-decoration: none;
-  color: #585847;
+  color: #4d4d4d;
 }
 
 a:hover{
@@ -101,7 +101,7 @@ ul.nav{
 
   .nav a{
     text-decoration: none;
-    color: #585847;;
+    color: #4d4d4d;;
   }
 
   .nav a:hover{
@@ -116,7 +116,7 @@ ul.nav{
 }
 
 .services a:link{
-color: #585847;
+color: #4d4d4d;
 }
 
 .services a.hover{
@@ -124,7 +124,7 @@ color: #585847;
 }
 
 .services a.visited{
-  color: #585847;
+  color: #4d4d4d;
 }
 
 .services a:active{
@@ -170,12 +170,12 @@ color: #585847;
 }
 
 .rw-info {
-  color: #585847;
+  color: #4d4d4d;
   margin-top: 1em;
 }
 
 .recent-work-list a{
-  color: #585847;
+  color: #4d4d4d;
 }
 
 .recent-work-list > a:active {
@@ -203,7 +203,7 @@ color: #585847;
   line-height: 28px;
   margin-bottom: 25px;
   margin-top: 15px;
-  color: #585847;
+  color: #4d4d4d;
 }
 
 .btn-default{
@@ -362,7 +362,7 @@ color: #585847;
   margin-top: 5px; }
 
 .known{
-  color: #585847;
+  color: #4d4d4d;
   
 }
 
