@@ -24,6 +24,7 @@
 <div class="container-fluid">
 	<div class="row"> <!-- intro -->
 		<div class="col-xs-12 nameplate"> 
+
 			<h1>James Benedict</h1>
 		</div> <!-- end of nameplate -->
 	
@@ -71,7 +72,7 @@
 		<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 recent-work-list">
 			
 				<div class="bar"></div>
-				<h3>Recent Work</h3>
+				<h3 class="rwh">Recent Work</h3>
 
 <br>
 
@@ -87,7 +88,7 @@
 					<a href="https://jamesbenedict.cartodb.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><button type="button" class="btn btn-default">View Original</button></a>
 				</div><!-- end of rw-info -->
 			</div><!-- end of crime-map Row -->
-<hr>
+
 			<div class="row"><!-- untreated Row -->
 				<div class="col-xs-12 col-sm-7 rw-media"><!--  SND img -->
 					<a href="http://specials.idsnews.com/untreated/"><img src="img/untreated.jpg"></a>
@@ -100,7 +101,7 @@
 					<a href="http://specials.idsnews.com/untreated/"><button type="button" class="btn btn-default">View Original</button></a>
 				</div><!-- end of rw-info -->
 			</div><!-- end of untreated Row -->
-<hr>	
+	
 
 			<div class="row"><!-- refugees Row -->
 				<div class="col-xs-12 col-sm-7 rw-media"><!--  SND img -->
@@ -114,7 +115,7 @@
 					<a href="http://specials.idsnews.com/refugees/"><button type="button" class="btn btn-default">View Original</button></a>
 				</div><!-- end of rw-info -->
 			</div><!-- end of refugees Row -->
-<hr>
+
 			<div class="row"><!-- first rounds Row -->
 				<div class="col-xs-12 col-sm-7 rw-media"><!--  SND img -->
 					<a href="http://specials.idsnews.com/first-rounds/"><img src="img/first-rounds.png"></a>
@@ -127,11 +128,45 @@
 					<a href="http://specials.idsnews.com/first-rounds/"><button type="button" class="btn btn-default">View Original</button></a>
 				</div><!-- end of rw-info -->
 			</div><!-- end of first ronds Row -->
-<hr>
+
 			
 				
 		</div> <!-- end of recent work list-->
 	</div><!-- end of work row -->
+
+<div class="row">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 timeline-container"> 
+
+
+	<button type="button" class="btn btn-default load">Load More</button>
+
+	<div class="additional">
+		<h2>Longform article</h2>
+
+
+			<!-- <p id='simple-table'></p> -->
+			
+ 			<table id='live-table'></table>
+			<script id="table-template" type="text/x-handlebars-template">
+			<tr>
+				<!-- Place a column title from the spreadsheet in double brackets like {{column-name}}  -->
+				<!-- if you want to include html from the spreadsheet, place that in three brackets like {{{column-name}}} -->
+				<td data-title="Category">{{Name}}</td>
+				<td data-title="Weather">{{{Weather}}}</td>
+				<td data-title="Average">{{Average}} degrees</td>
+				<td data-title="Sunlight">{{{Sunlight}}} hours</td>
+			</tr>
+		</script>	
+			
+		<h2>Data anaylsis</h2>
+		<h2>Photography</h2>
+		<h2>Print design</h2>
+		<h2>Everything else</h2>
+	</div>
+
+
+</div>
+</div>
 
 <br>
 	<div class="row"> <!-- timeline container row -->
@@ -309,9 +344,9 @@
 	</div><!-- end of timeline container row -->
 
 
-	<div class="row">	
+	<div class="row skill_listr">	
 		<div class="col-xs-12 ">
-		<hr>
+	<!-- 	<hr> -->
 		<br>
 	<ul class="skills">
 		<li>
@@ -380,11 +415,12 @@
 	<span id="credits">© James Benedict, 2014-2015.</span>
 </footer>
  -->
+<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+<script src="js/tabletop.js"></script>
+<script src="js/handlebars.js"></script>
+<script src="js/tabletop-custom.js"></script>
+
 
 </body>
 
