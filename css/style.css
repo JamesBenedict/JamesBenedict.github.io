@@ -1,21 +1,25 @@
 html {
   color: #4d4d4d; }
 
+body {
+  max-width: 2000px;
+  margin: 0 auto; }
+
 h1, h2, h3 {
   font-family: 'Abril Fatface', sans-serif;
   color: #4d4d4d; }
 
-p, h4, h5, h6 {
+p, h4, h5, h6, li {
   font-family: lato, sans-serif; }
 
 h1 {
-  font-size: 4em; }
+  font-size: 5em; }
 
 h2 {
-  font-size: 2.5em; }
+  font-size: 3em; }
 
 h3 {
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 p {
   line-height: 1.5em;
@@ -30,6 +34,10 @@ a:hover {
 
 i {
   font-style: italic; }
+
+li {
+  font-size: 1.2em;
+  line-height: 1.5em; }
 
 header {
   width: 80%;
@@ -63,7 +71,9 @@ article {
     margin-right: 5%;
     float: left; }
   .work .text {
-    margin-left: 0%; }
+    margin-left: 0%;
+    max-width: 100%;
+    float: none; }
   .work h3 {
     margin-top: .5em; }
   .work h4 {
@@ -100,6 +110,35 @@ button:hover {
   background-color: #be4c39;
   color: white; }
 
+section {
+  text-align: center; }
+
+.extra-work h3 {
+  display: inline-block;
+  width: 47.5%;
+  vertical-align: top;
+  text-align: right;
+  margin-bottom: 4em;
+  margin-right: 5%; }
+
+.extra-work ol {
+  width: 47%;
+  display: inline-block;
+  text-align: left;
+  font-size: .75em;
+  margin-bottom: 3em; }
+
+.extra-work li {
+  border-bottom: 1px solid black;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  .extra-work li a {
+    font-size: 1.2em; }
+  .extra-work li:first-child {
+    padding-top: .75em; }
+  .extra-work li:last-child {
+    border-bottom: none; }
+
 @media (max-width: 768px) {
   header p {
     max-width: 75%;
@@ -109,13 +148,18 @@ button:hover {
     .work img {
       float: left;
       max-width: 50%; }
+    .work .text {
+      max-width: 45%;
+      float: right; }
   .fa-angle-down {
     display: block;
     margin: 0 auto; }
   .work-arrow {
     text-align: center;
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  h3 {
+    font-size: 1.5em; } }
 
 @media (max-width: 500px) {
   p {
@@ -146,10 +190,10 @@ button:hover {
     float: left;
     margin-left: 10px; }
   .work-arrow {
+    margin-left: 5%;
     float: left; }
   article {
     max-width: 90%;
-    width: 100%;
     margin-top: 4em;
     margin-left: 5%; }
     article h2 {
@@ -167,4 +211,10 @@ button:hover {
     .work p {
       margin-top: .75em; }
     .work button {
-      margin-top: .75em; } }
+      margin-top: .75em; }
+    .work .text {
+      max-width: 100%;
+      float: none; } }
+
+article#work > .work:last-child {
+  float: left; }
