@@ -1,3 +1,10 @@
+.shape {
+  float: right;
+  width: 18em;
+  height: 18em;
+  shape-outside: circle(50%);
+  margin-top: .2em; }
+
 html {
   color: #4d4d4d; }
 
@@ -13,7 +20,7 @@ p, h4, h5, h6, li {
   font-family: lato, sans-serif; }
 
 h1 {
-  font-size: 5em; }
+  font-size: 6em; }
 
 h2 {
   font-size: 3em; }
@@ -53,14 +60,24 @@ header {
   margin-left: 10%;
   margin-top: 3em;
   text-align: left; }
+  header .header-contain {
+    max-width: 75%; }
   header h1 {
     margin-bottom: .5em; }
   header img {
-    width: 30%;
-    float: right; }
+    width: 15%;
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    top: 80%; }
+  header .shape {
+    background-image: url("../img/miface.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 2em; }
   header p {
-    display: block;
-    width: 60%;
+    width: 100%;
+    text-align: justify;
     margin-bottom: 1em; }
   header a {
     color: #be4c39; }
@@ -120,6 +137,16 @@ button:hover {
 section {
   text-align: center; }
 
+#extra-head h2 {
+  max-width: 45%;
+  display: inline; }
+
+#extra-head button {
+  margin-top: 0em;
+  position: relative;
+  left: 5%;
+  bottom: .8em; }
+
 #extra-work {
   display: none;
   transition: all 600ms ease-in-out;
@@ -148,12 +175,13 @@ section {
     transition-property: all;
     transition-duration: 0.1s;
     transition-timing-function: initial;
-    transition-delay: initial; }
+    transition-delay: initial;
+    color: #ccc; }
     #extra-work li a {
-      font-size: 1.2em;
+      font-size: 1em;
       color: #4d4d4d; }
     #extra-work li:first-child {
-      padding-top: .75em; }
+      padding-top: .5em; }
     #extra-work li:last-child {
       border-bottom: none; }
     #extra-work li:hover {
@@ -299,10 +327,10 @@ section {
 .me {
   margin-top: 3em;
   padding-top: .01em;
-  height: 100%;
   color: white;
   background-color: #be4c39;
-  margin-bottom: 10em; }
+  position: relative;
+  height: 115%; }
   .me h2 {
     color: white; }
   .me .bar {
@@ -310,18 +338,31 @@ section {
   .me article {
     width: 50%; }
     .me article p {
-      width: 60%; }
+      width: 60%;
+      margin-bottom: 1em; }
   .me img {
-    width: 50%;
-    float: right; }
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    height: 100%; }
 
 .travel {
   margin-top: 3em; }
+  .travel figure {
+    width: 100%; }
+  .travel #map {
+    width: 500px;
+    height: 500px; }
+
+@media (max-width: 985px) {
+  header p {
+    width: 80%; }
+  #extra-work h3 {
+    width: 45%; } }
 
 @media (max-width: 768px) {
   header p {
-    max-width: 75%;
-    margin-left: 15%; }
+    width: 62%; }
   .work {
     margin-bottom: 3em; }
     .work img {
@@ -346,6 +387,10 @@ section {
     width: 35%; }
   .timeline li .timeline-badge {
     left: 50%; }
+  #extra-work h3 {
+    width: 45%; }
+  #extra-work ol {
+    margin-bottom: 2em; }
   .skills .more {
     width: 60%;
     margin-top: 3em; }
@@ -377,7 +422,8 @@ section {
       margin-left: 5%;
       text-align: left; }
     header p {
-      max-width: 90%;
+      max-width: 80%;
+      width: 100%;
       margin-left: 5%; }
   .fa-angle-down {
     float: left;
@@ -428,7 +474,24 @@ section {
       border-left: 0 solid #fff;
       border-bottom: 14px solid transparent; }
   .timeline li .timeline-badge {
-    left: 5%; } }
+    left: 5%; }
+  #extra-head h2 {
+    width: 100%; }
+  #extra-head button {
+    display: block;
+    position: static;
+    margin-top: 1em; }
+  #extra-head .bar {
+    margin-top: -3em; }
+  #extra-work {
+    margin-top: 0em; }
+    #extra-work h3 {
+      width: 100%;
+      text-align: left;
+      margin-bottom: .5em; }
+    #extra-work ol {
+      margin-bottom: 4em;
+      width: 100%; } }
 
 article#work > .work:last-child {
   float: left; }

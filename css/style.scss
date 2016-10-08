@@ -4,6 +4,15 @@ $myblue: #4B6892;
 
 
 
+.shape {
+    float: right;
+    width: 18em;
+    height: 18em;
+    shape-outside: circle(50%);
+    margin-top: .2em;
+}
+
+
 
 html{
 	color: $mygray;
@@ -24,7 +33,7 @@ p, h4,h5,h6,li{
 	font-family: lato, sans-serif;
 }
 h1{	
-	font-size: 5em;
+	font-size: 6em;
 }
 h2{
 	font-size: 3em;
@@ -72,23 +81,36 @@ header{
 	margin-top: 3em;
 
 	text-align: left;
+	.header-contain{
+		max-width: 75%;
+
+	}
 	h1{
 		// width: 100%;
 		margin-bottom: .5em;
 	}
 	img{
-		width: 30%;
-		float: right;
-		// position: absolute;
+		width: 15%;
+		// float: right;
+		display: inline-block;
+		position: relative;
+		left: 5%;
 		// right: 15%;
-		// top: 10%;
+		top: 80%;
 
+	}
+	
+	.shape{
+		background-image: url('../img/miface.png');
+		 background-size: contain;
+		 background-repeat: no-repeat;
+		 margin-left: 2em;
 	}
 	p{
 		
-		display: block;
-		width: 60%;
-		
+		// display: inline-block;
+		width: 100%;
+		text-align: justify;
 
 		// margin: 0 auto;
 		margin-bottom: 1em;
@@ -187,6 +209,21 @@ section{
 }
 
 // load more
+
+#extra-head{
+		h2{
+			max-width: 45%;
+			display: inline;
+		}
+		button{
+			margin-top: 0em;
+			position: relative;
+			left: 5%;
+			bottom: .8em;
+		}
+	}
+
+
 #extra-work{
 	display: none;
 	transition: all 600ms ease-in-out;
@@ -222,13 +259,16 @@ section{
 	    transition-duration: 0.1s;
 	    transition-timing-function: initial;
 	    transition-delay: initial;
+	    color: #ccc;
+
+
 		a{
-			font-size: 1.2em;
+			font-size: 1em;
 			color: $mygray;
 
 		}
 		&:first-child{
-			padding-top: .75em;
+			padding-top: .5em;
 		}
 		&:last-child{
 			border-bottom: none;
@@ -460,11 +500,13 @@ section{
 	// }
 	margin-top: 3em;
 	padding-top: .01em;
-	height: 100%;
+
 	color: white;
 	// position: absolute;
 	background-color: $myred;
-	margin-bottom: 10em;
+	// margin-bottom: 3em;
+	position: relative;
+	height: 115%;
 
 	h2{
 		color:white;
@@ -478,16 +520,18 @@ section{
 		width: 50%;
 		p{
 			width: 60%;
+			margin-bottom: 1em;
 		}
 	}
 	img{
-		// position: absolute;
-		// // top: 0%;
-		// // right: 0%;
+		position: absolute;
+		top: 0%;
+		right: 0%;
 		// max-width: 50%;
-		width: 50%;
-		float: right;
+		height: 100%;	
+		// float: right;
 		
+		// position: fixed;
 		// max-height: 100%;
 		// height: auto;
 	}
@@ -495,7 +539,29 @@ section{
 
 .travel{
 	margin-top: 3em;
-	
+	// height: 1000px;
+	figure{
+		width: 100%;
+	}
+	#map{
+		width: 500px;
+		height: 500px;
+	}
+}
+
+
+@media(max-width: 985px){
+	header{
+		p{
+			width: 80%;
+		}
+	}
+	#extra-work{
+		h3{
+			width: 45%;
+			// color: red;
+		}
+	}
 }
 // ipad
 @media (max-width: 768px){
@@ -505,8 +571,8 @@ section{
 	}
 	header{
 		p{
-			max-width: 75%;
-			margin-left: 15%;
+			width: 62%;
+			// margin-left: 15%;
 		}
 	}
 	.work{
@@ -569,6 +635,17 @@ section{
 		}
 
 	}
+	#extra-work{
+		h3{
+			width: 45%;
+			// color: red;
+			// // text-align: left;
+			// margin-bottom: 0em;
+		}
+		ol{
+			margin-bottom: 2em;
+		}
+	}
 	.skills{
 		.more{
 			width: 60%;
@@ -621,7 +698,8 @@ section{
 			text-align: left;
 		}
 		p{
-			max-width: 90%;
+			max-width: 80%;
+			width: 100%;
 			margin-left: 5%;
 		}
 	}
@@ -706,6 +784,35 @@ section{
 
 		}
 
+	}
+	#extra-head{
+		h2{
+			width: 100%;
+
+		}
+		button{
+			display: block;
+			position: static;
+			margin-top: 1em;
+
+		}
+		.bar{
+			margin-top: -3em;
+		}
+	}
+	
+	#extra-work{
+		margin-top: 0em;
+		h3{
+			width: 100%;
+			// color: red;
+			text-align: left;
+			margin-bottom: .5em;
+		}
+		ol{
+			margin-bottom: 4em;
+			width: 100%;
+		}
 	}
 	
 }

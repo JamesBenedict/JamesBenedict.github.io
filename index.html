@@ -8,6 +8,8 @@
 	<link rel="icon" href="img/jb-logo.png">
 
 	<link href="css/reset.css" rel="stylesheet">
+		<link href="css/leaflet.css" rel="stylesheet">
+
 	<link href="css/style.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -18,10 +20,22 @@
 
 <header>
 	<h1>James Benedict</h1>
-	<!-- <h4>Journalist</h4> -->
-<!-- <img src="img/karate.jpg" alt="">
+
+	
+		<!-- <img src="img/MYFACE.jpg" alt="" class="round-wrap">
  -->
-	<p>I’m a senior at Indiana University working for the investigative desk at the <a href="http://www.idsnews.com/">Indiana Daily Student</a>. If I’m not in front of my keyboard, chances are you’ll catch me behind a camera. I love taking things apart and putting them back in my own way. Shoot me an <a href="mailto:jabenedi@indiana.edu">email</a> if you want to talk about any of the results below and check out my <a href="https://github.com/JamesBenedict">github</a> to see how they were made.</p>
+ 		<div class="header-contain">
+		<div class="shape"></div>
+		<p>I’m a senior at Indiana University working for the investigative desk at the <a href="http://www.idsnews.com/">Indiana Daily Student</a>. If I’m not in front of my keyboard, chances are you’ll catch me behind a camera. I love taking things apart and to see how they work. Shoot me an <a href="mailto:jabenedi@indiana.edu">email</a> if you want to talk about any of the results below, and check out my <a href="https://github.com/JamesBenedict">github</a> to see how they were made. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare egestas mi at elementum. Curabitur consectetur magna congue, tempus
+		Curabitur consectetur
+		</p>
+
+		<!-- <p><a href="asldkjf">twitter</a> • linkedin </p>  -->
+		</div>
+		
+
+
+	
 	
 
 	
@@ -89,11 +103,24 @@
 
 
 
+<article id="extra-head">
+	<div class="bar"></div>
+	<h2>Extended Work</h2>
 
-
+	<button id="viewMore">view more
+			
+		</button>
+		
+	
+	<section style="margin-bottom:2em;">
+		
+	</section>
+	
+</article>
 
 
 <article id="extra-work">
+	
 
 	<h3>Data</h3>
 		<ol>
@@ -139,19 +166,12 @@
 
 		</ol>
 </article>
-<article class="hidden">
-	<p>a</p>
-</article>
 
-<section style="margin-bottom:2em;">
-	<button id="viewMore">view more
-		
-	</button>
-	<button id="viewLess">view less
-		
-	</button>
-</section>
+
 <section>
+	<button id="viewLess">view less
+			
+		</button>
 
 	<!-- <p><i>History</i></p>
 	<i class="fa fa-2x fa-angle-down" aria-hidden="true"></i> -->
@@ -350,13 +370,13 @@ Download PDF</a></p>
 				<!-- -->
 			
 			</li>
-			<li>Bootstrap • Foundation • Skelton
+			<li>Bootstrap • Skelton
 				
 			</li>
 			<li>Git
 				
 				</li>
-			<li>gulp
+			<li>Wordpress
 				
 			</li>
 			<li>Leaflet
@@ -409,12 +429,13 @@ Download PDF</a></p>
 				<li>DSLR photography
 				</li>
 				<li>Videography</li>
+				<li>AP style</li>
 				<li>Illustrator</li>
 				<li>Photoshop</li>
 				<li>InDesign</li>
 			
-				<li>Wordpress</li>
-				<li>AP style</li>
+				<li>QGIS</li>
+				
 
 				<li>Premiere</li>
 				<li>Audition</li>
@@ -423,30 +444,72 @@ Download PDF</a></p>
 </article>
 
 <div class='me'>
-<img src="img/insta1.png" alt="">
 
-<article>
+<article >
+	<img src="img/insta1.png" alt="">
 
 	<div class="bar"></div>
 	<h2 class="section-title">About</h2>
 
 	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicing an airhorn. During the interview if you get me talking about something intriguing you might need me to slow down to understand every word.</p>
+
+	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicing an airhorn. During the interview if you get me talking about something intriguing you might need me to slow down to understand every word.</p>
+
+	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicing an airhorn. During the interview if you get me talking about something intriguing you might need me to slow down to understand every word.</p>
+
+
 </article>
 
 </div>
 
-<article class="travel">
-	<div class="bar"></div>
-	<h2 class="section-title">Where I've Been</h2>
-</article>
-	
+<!-- <article class="travel"> -->
+	<!-- <div class="bar"></div>
+	<h2 class="section-title">Where I've Been in the last five ye</h2>
 
+	<figure -->
+		<!-- Carmel -->
+		<!-- Bloomington -->
+		<!-- Rome -->
+		<!-- Monza -->
+		<!-- Bologna -->
+		<!-- Siciliy -->
+		<!-- Denver -->
+		<!-- San Fransico -->
+		<!-- Buffalo -->
+		<!-- Toronto -->
+		<!-- Pittsburgh -->
+		<!-- Chicago -->
+		<!-- Kampala -->
+		<!-- Rwenzori -->
+		<!-- Kalangala -->
+		<!-- Merchian falls -->
+		<!-- Dubai -->
+		<!-- Santa Fe -->
+		<!-- Minneapolis -->
+		<!-- Philedelphia -->
+	<!-- 	<div id="map"></div>
+	</figure> -->
+<!-- 	
+</article>
+	 -->
+<!-- <article class="contact">
+	<div class="bar"></div>
+	<h2>Contact</h2>
+
+	<p><a href="la">twitter</a>
+	</p>
+</article>
+ -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/handlebars-v4.0.5.js"></script>
 <script type="text/javascript" src="js/tabletop.js"></script>
 
 <script type="text/javascript" src ='js/tabletop-custom.js'></script>
 <script type="text/javascript" src ='js/loadmore.js'></script>
+<script type="text/javascript" src='js/shapes-polyfill.js'></script>
+<script type="text/javascript" src='js/leaflet.js'></script>
+<script type="text/javascript" src='js/map.js'></script>
+
 
 
 <script></script>
