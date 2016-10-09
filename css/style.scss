@@ -10,6 +10,7 @@ $myblue: #4B6892;
     height: 18em;
     shape-outside: circle(50%);
     margin-top: .2em;
+
 }
 
 
@@ -140,7 +141,7 @@ article{
 	display: inline-block;
 	width: 100%;
 	margin-bottom: 3em;
-	
+
 	img{
 		max-width: 47.5%;
 		margin-right: 5%;
@@ -149,17 +150,17 @@ article{
 	}
 	.text{
 		margin-left: 0%;
-		max-width: 100%;
-    	float: none;
+		max-width: 47.5%;
+    	float: right;
 
 	}
 
 	
 	h3{
-		margin-top: .5em;
+		margin-top: .25em;
 	}
 	h4{
-		margin-top: 1em;
+		margin-top: .5em;
 	}
 	p{
 		margin-top: .5em;
@@ -511,6 +512,7 @@ section{
 
 	h2{
 		color:white;
+		margin-bottom: .5em;
 	}
 	.bar{
 		background-color: white;
@@ -571,9 +573,19 @@ section{
 			// color: red;
 		}
 	}
+	.timeline{
+		li{
+
+
+		.timeline-panel{
+			width: 35%;
+		}
+		}
+	}
 }
 // ipad
 @media (max-width: 768px){
+	
 	html{
 		// padding-left: 10%;
 		// padding-right: 10%;
@@ -631,7 +643,7 @@ section{
 		  }
 		li{
 			.timeline-panel{
-				width: 35%;
+				width: 30%;
 				// float: left;
 				// margin-left: 5em;
 				&:before {
@@ -682,7 +694,18 @@ section{
 		}
 	}
 	
-	
+	.me{
+		article{
+			p{
+			width: 75%;
+		}
+		}
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
 	
 }
 

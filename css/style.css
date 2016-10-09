@@ -97,12 +97,12 @@ article {
     float: left; }
   .work .text {
     margin-left: 0%;
-    max-width: 100%;
-    float: none; }
+    max-width: 47.5%;
+    float: right; }
   .work h3 {
-    margin-top: .5em; }
+    margin-top: .25em; }
   .work h4 {
-    margin-top: 1em; }
+    margin-top: .5em; }
   .work p {
     margin-top: .5em; }
 
@@ -333,7 +333,8 @@ section {
   position: relative;
   height: 115%; }
   .me h2 {
-    color: white; }
+    color: white;
+    margin-bottom: .5em; }
   .me .bar {
     background-color: white; }
   .me article {
@@ -366,7 +367,9 @@ section {
     header p {
       width: 100%; }
   #extra-work h3 {
-    width: 45%; } }
+    width: 45%; }
+  .timeline li .timeline-panel {
+    width: 35%; } }
 
 @media (max-width: 768px) {
   header {
@@ -399,7 +402,7 @@ section {
     left: 50%;
     margin-left: -1.5px; }
   .timeline li .timeline-panel {
-    width: 35%; }
+    width: 30%; }
   .timeline li .timeline-badge {
     left: 50%; }
   #extra-work h3 {
@@ -412,7 +415,12 @@ section {
   .skills .data {
     margin-top: 3em; }
   .skills .development {
-    margin-top: 1em; } }
+    margin-top: 1em; }
+  .me article p {
+    width: 75%; }
+  .me img {
+    width: 100%;
+    height: auto; } }
 
 @media (max-width: 500px) {
   p {
