@@ -88,6 +88,7 @@ header{
 	h1{
 		// width: 100%;
 		margin-bottom: .5em;
+		text-shadow: 2px 2px #ccc;
 	}
 	img{
 		width: 15%;
@@ -552,8 +553,16 @@ section{
 
 @media(max-width: 985px){
 	header{
+		width: 75%;
+		h1{
+			font-size: 4.5em;
+		}
+		.header-contain{
+			max-width: 100%;
+			width: 100%;
+		}
 		p{
-			width: 80%;
+			width: 100%;
 		}
 	}
 	#extra-work{
@@ -570,8 +579,22 @@ section{
 		// padding-right: 10%;
 	}
 	header{
+		width: 80%;
+		.header-contain{
+			max-width: 100%;
+			width: 100%;
+		}
+		.shape{
+			// width: 12em;
+			// height: 1em;
+			// float: right;
+		}	
+		h1{
+			font-size: 5em;
+		}
 		p{
-			width: 62%;
+			width: 100%;
+			// font-size: 1.8em;
 			// margin-left: 15%;
 		}
 	}
@@ -673,7 +696,7 @@ section{
 		margin-let: 0%;	
 	}
 	h1{
-		font-size: 4.5em;
+		font-size: 6em;
 	}
 	h2{
 		font-size: 2em;
@@ -684,35 +707,45 @@ section{
 		margin-bottom: .2em;
 	 
 	}
-	html{
-		// padding-left: 5%;
-		// padding-right: 5%;
+	.shape{
+		width: 15em;
+		height: 15em;
+		// margin-top: 10em;
+		float: none;
+		// width: 100%;
+		position: absolute;
+		// left: 0%;
+		top: 2.5%;
+		right: 2.5%;
+		z-index: -1 !important;
 	}
 	header{
+		
+		max-width: 100%;
 		width: 100%;
 		margin-left: 0%; 
 		font-size: .6em;
-		h1{
+		.header-contain{
+			max-width: 100%;
 			width: 100%;
+		}
+		h1{
+			width: 75%;
+			max-width: 75%;
 			margin-left: 5%;
 			text-align: left;
+
 		}
 		p{
 			max-width: 80%;
 			width: 100%;
 			margin-left: 5%;
+			text-align: left;
+			// font-size: 2em;
+			line-height: 1.5em;
 		}
 	}
-	.fa-angle-down{
-
-		float: left;
-		margin-left: 10px;
-		
-	}
-	.work-arrow{
-		margin-left: 5%;
-		float: left;
-	}
+	
 	article{
 		max-width: 90%;
 		
@@ -815,6 +848,19 @@ section{
 		}
 	}
 	
+}
+
+@media (max-width: 325px){
+	header{
+		h1{
+			font-size: 5em;
+			margin-bottom: 1em;
+		}
+		p{
+			
+			font-size: 1.5em;
+		}
+	}
 }
 
 // article > .work{

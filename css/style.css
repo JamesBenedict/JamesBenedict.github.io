@@ -63,7 +63,8 @@ header {
   header .header-contain {
     max-width: 75%; }
   header h1 {
-    margin-bottom: .5em; }
+    margin-bottom: .5em;
+    text-shadow: 2px 2px #ccc; }
   header img {
     width: 15%;
     display: inline-block;
@@ -355,14 +356,28 @@ section {
     height: 500px; }
 
 @media (max-width: 985px) {
-  header p {
-    width: 80%; }
+  header {
+    width: 75%; }
+    header h1 {
+      font-size: 4.5em; }
+    header .header-contain {
+      max-width: 100%;
+      width: 100%; }
+    header p {
+      width: 100%; }
   #extra-work h3 {
     width: 45%; } }
 
 @media (max-width: 768px) {
-  header p {
-    width: 62%; }
+  header {
+    width: 80%; }
+    header .header-contain {
+      max-width: 100%;
+      width: 100%; }
+    header h1 {
+      font-size: 5em; }
+    header p {
+      width: 100%; }
   .work {
     margin-bottom: 3em; }
     .work img {
@@ -406,31 +421,40 @@ section {
     text-align: left;
     margin-let: 0%; }
   h1 {
-    font-size: 4.5em; }
+    font-size: 6em; }
   h2 {
     font-size: 2em; }
   .bar {
     height: .89em;
     width: 4em;
     margin-bottom: .2em; }
+  .shape {
+    width: 15em;
+    height: 15em;
+    float: none;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    z-index: -1 !important; }
   header {
+    max-width: 100%;
     width: 100%;
     margin-left: 0%;
     font-size: .6em; }
+    header .header-contain {
+      max-width: 100%;
+      width: 100%; }
     header h1 {
-      width: 100%;
+      width: 75%;
+      max-width: 75%;
       margin-left: 5%;
       text-align: left; }
     header p {
       max-width: 80%;
       width: 100%;
-      margin-left: 5%; }
-  .fa-angle-down {
-    float: left;
-    margin-left: 10px; }
-  .work-arrow {
-    margin-left: 5%;
-    float: left; }
+      margin-left: 5%;
+      text-align: left;
+      line-height: 1.5em; }
   article {
     max-width: 90%;
     margin-top: 4em;
@@ -492,6 +516,13 @@ section {
     #extra-work ol {
       margin-bottom: 4em;
       width: 100%; } }
+
+@media (max-width: 325px) {
+  header h1 {
+    font-size: 5em;
+    margin-bottom: 1em; }
+  header p {
+    font-size: 1.5em; } }
 
 article#work > .work:last-child {
   float: left; }
