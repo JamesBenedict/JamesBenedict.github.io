@@ -55,5 +55,8 @@ Studied journalism and informatics and Indiana University
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/master

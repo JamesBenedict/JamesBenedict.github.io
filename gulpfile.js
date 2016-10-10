@@ -7,9 +7,9 @@ var runSequence = require('run-sequence');
 
 
 gulp.task('sass', function(){
-	return gulp.src('/css/*.scss')
+	return gulp.src('css/*.scss')
 	.pipe(sass())
-	.pipe(gulp.dest('/css'))
+	.pipe(gulp.dest('css/'))
 	.pipe(browserSync.reload({
 		stream: true
 	}))

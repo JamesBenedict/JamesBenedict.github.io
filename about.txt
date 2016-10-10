@@ -7,6 +7,7 @@ I'm working at the invesitagtions desk at the Indiana Daily Student focusing on 
 I like taking things apart and then seeing how I can put them back differently (I still feel bad for some of my sister's barbies). Check out some of the more recent result below or on my 
  <a href="https://github.com/JamesBenedict">github</a>
 
+<<<<<<< HEAD
 
 
 <p>We should probably get this out of the way, if you call me with an offer I might respond by mimicking an airhorn. During the interview if you get me talking about something I like you might need me to slow down to understand every word. I'm an excitable person who is having a great time learning how to make better graphics.</p>
@@ -14,3 +15,6 @@ I like taking things apart and then seeing how I can put them back differently (
 <p>I've never been good at staying satsified with my current understanding of technology. I must have given myself half a dozen heart attacks learning how to jailbreak my phone or messing with my computer's BIOS, but I love the rush of discovery. I promise if you let me into your system I won't break anything but I might annoy you with how many questions I ask.</p>
 
 <p>While soon I might be techincally done with my schooling, I am far from being done with my education. I hope wherever I end up pushes me so I can keep leaning better analyis and visulization methods. I hope to create as clean and intuative of a process as I can.</p>
+=======
+my b
+>>>>>>> origin/master
