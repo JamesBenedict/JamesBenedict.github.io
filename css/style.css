@@ -63,12 +63,7 @@ header {
   header .header-contain {
     max-width: 75%; }
   header h1 {
-    margin-bottom: .5em;
-<<<<<<< HEAD
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.25); }
-=======
-    text-shadow: 2px 2px #ccc; }
->>>>>>> origin/master
+    margin-bottom: .5em; }
   header img {
     width: 15%;
     display: inline-block;

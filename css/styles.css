@@ -2,50 +2,6 @@
 img {
   width: 100%; }
 
-<<<<<<< HEAD
-.nameplate {
-  color: blue; }
-
-.navigation {
-  color: blue; }
-
-.arrows {
-  color: blue; }
-
-.recent-work-list {
-  color: blue; }
-
-.rw-date {
-  color: blue; }
-
-.start-date {
-  color: red; }
-
-.end-date {
-  color: black; }
-
-.rw-media {
-  color: blue; }
-
-.rw-info {
-  color: blue ul;
-    color-color: blue; }
-
-.known {
-  color: blue; }
-
-.skills {
-  color: blue; }
-
-.tools {
-  color: blue; }
-
-.libraries {
-  color: blue; }
-
-.timeline-container {
-  color: blue; }
-=======
 /*text*/
 h1, h2, h3 {
   font-family: 'Abril Fatface', cursive;
@@ -214,7 +170,6 @@ ul.nav {
   margin-bottom: 25px;
   margin-top: 15px;
   color: #4d4d4d; }
->>>>>>> origin/master
 
 .timeline {
   list-style: none;
@@ -257,6 +212,7 @@ ul.nav {
   border: 1px solid #d4d4d4;
   border-radius: 2px;
   padding: 20px;
+  margin-right: -5px;
   position: relative;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175); }
@@ -269,7 +225,7 @@ ul.nav {
   border-top: 15px solid transparent;
   border-left: 15px solid #ccc;
   border-right: 0 solid #ccc;
-  border-botton: 15px solid transparent;
+  border-bottom: 15px solid transparent;
   content: " "; }
 
 .timeline > li > .timeline-panel:after {
@@ -294,19 +250,14 @@ ul.nav {
   top: 16px;
   left: 50%;
   margin-left: -25px;
-  background-color: #999999;
+  background-color: #be4c39;
   z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
-<<<<<<< HEAD
-  border-botton-right-radius: 50%;
-  border-botton-left-radius: 50%; }
-=======
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%; }
->>>>>>> origin/master
 
-timeline > li.timeline-inverted > .timeline-panel {
+.timeline > li.timeline-inverted > .timeline-panel {
   float: right; }
 
 .timeline > li.timeline-inverted > .timeline-panel:before {
@@ -326,39 +277,34 @@ timeline > li.timeline-inverted > .timeline-panel {
   content: " "; }
 
 .timeline-badge.primary {
-  background-color: #2e6da4; }
+  background-color: #be4c39 !important; }
 
 .timeline-badge.success {
-  background-color: #3f903f; }
+  background-color: #be4c39 !important; }
 
 .timeline-badge.warning {
-  background-color: #f0ad4e; }
+  background-color: #be4c39 !important; }
 
 .timeline-badge.danger {
-  background-color: #d9534f; }
+  background-color: #be4c39 !important; }
 
 .timeline-badge.info {
-  background-color: #5bc0de; }
+  background-color: #be4c39 !important; }
 
 .timeline-title {
   margin-top: 0;
   color: inherit; }
 
-<<<<<<< HEAD
-=======
 .timeline-title {
   font-size: 1.5em;
   font-weight: 700; }
 
->>>>>>> origin/master
 .timeline-body > p,
 .timeline-body > ul {
   margin-bottom: 0; }
 
 .timeline-body > p + p {
   margin-top: 5px; }
-<<<<<<< HEAD
-=======
 
 .known {
   color: #4d4d4d; }
@@ -514,4 +460,3 @@ hr {
 
 .additional h2 {
   font-size: 1.2em; }
->>>>>>> origin/master
