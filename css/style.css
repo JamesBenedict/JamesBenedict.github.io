@@ -327,20 +327,18 @@ section {
 .me {
   margin-top: 3em;
   padding-top: .01em;
+  padding-bottom: 1em;
   color: white;
   background-color: #be4c39;
-  position: relative;
-  height: 115%; }
+  position: relative; }
   .me h2 {
     color: white;
     margin-bottom: .5em; }
   .me .bar {
     background-color: white; }
-  .me article {
-    width: 50%; }
-    .me article p {
-      width: 60%;
-      margin-bottom: 1em; }
+  .me p {
+    width: 50%;
+    margin-bottom: 1em; }
   .me img {
     position: absolute;
     top: 0%;
@@ -355,7 +353,12 @@ section {
     width: 500px;
     height: 500px; }
 
+.hidden-large {
+  display: inherit; }
+
 @media (max-width: 985px) {
+  .hidden-large {
+    display: none; }
   header {
     width: 75%; }
     header h1 {
@@ -368,7 +371,20 @@ section {
   #extra-work h3 {
     width: 45%; }
   .timeline li .timeline-panel {
-    width: 35%; } }
+    width: 35%; }
+  .me {
+    background: url("../img/aboutme.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 110%; }
+    .me article p {
+      width: 75%; }
+    .me img {
+      height: 100%; } }
 
 @media (max-width: 768px) {
   header {
@@ -415,8 +431,6 @@ section {
     margin-top: 3em; }
   .skills .development {
     margin-top: 1em; }
-  .me article p {
-    width: 75%; }
   .me img {
     width: 100%;
     height: auto; } }
@@ -522,7 +536,20 @@ section {
       margin-bottom: .5em; }
     #extra-work ol {
       margin-bottom: 4em;
-      width: 100%; } }
+      width: 100%; }
+  .me {
+    background: url("../img/aboutme.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 110%; }
+    .me article p {
+      width: 75%; }
+    .me img {
+      height: 100%; } }
 
 @media (max-width: 325px) {
   header h1 {

@@ -502,13 +502,14 @@ section{
 	// }
 	margin-top: 3em;
 	padding-top: .01em;
+	padding-bottom: 1em;
 
 	color: white;
 	// position: absolute;
 	background-color: $myred;
 	// margin-bottom: 3em;
 	position: relative;
-	height: 115%;
+	// height: 115%;
 
 	h2{
 		color:white;
@@ -519,13 +520,12 @@ section{
 
 	}
 	
-	article{
-		width: 50%;
+
 		p{
-			width: 60%;
+			width: 50%;
 			margin-bottom: 1em;
 		}
-	}
+	
 	img{
 		position: absolute;
 		top: 0%;
@@ -552,8 +552,14 @@ section{
 	}
 }
 
+.hidden-large{
+	display: inherit;
+}
 
 @media(max-width: 985px){
+	.hidden-large{
+		display: none;
+	}
 	header{
 		width: 75%;
 		h1{
@@ -580,6 +586,30 @@ section{
 		.timeline-panel{
 			width: 35%;
 		}
+		}
+	}
+
+	.me{
+			background: url('../img/aboutme.jpg') no-repeat center center fixed;
+		 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		background-repeat: no-repeat;
+		// background-position: right top;
+		background-attachment: scroll;
+		height: 110%;
+		article{
+			p{
+			width: 75%;
+		}
+
+		}
+		
+		img{
+			height: 100%;
+			// width: auto;
+
 		}
 	}
 }
@@ -697,7 +727,7 @@ section{
 	.me{
 		article{
 			p{
-			width: 75%;
+			// width: 75%;
 		}
 		}
 		
@@ -868,6 +898,30 @@ section{
 		ol{
 			margin-bottom: 4em;
 			width: 100%;
+		}
+	}
+
+	.me{
+		background: url('../img/aboutme.jpg') no-repeat center center fixed;
+		 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+		background-repeat: no-repeat;
+		// background-position: right top;
+		background-attachment: scroll;
+		height: 110%;
+		article{
+			p{
+			width: 75%;
+		}
+
+		}
+		
+		img{
+			height: 100%;
+			// width: auto;
+
 		}
 	}
 	
