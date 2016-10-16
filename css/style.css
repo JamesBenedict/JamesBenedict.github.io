@@ -9,7 +9,6 @@ html {
   color: #4d4d4d; }
 
 body {
-  max-width: 2000px;
   margin: 0 auto; }
 
 h1, h2, h3 {
@@ -20,7 +19,8 @@ p, h4, h5, h6, li {
   font-family: lato, sans-serif; }
 
 h1 {
-  font-size: 6em; }
+  font-size: 6em;
+  text-shadow: 2px 2px #ccc; }
 
 h2 {
   font-size: 3em; }
@@ -83,13 +83,16 @@ header {
     color: #be4c39; }
 
 article {
+  max-width: 2000px;
   width: 80%;
   margin-left: 10%; }
 
+hr {
+  color: red; }
+
 .work {
   display: inline-block;
-  width: 100%;
-  margin-bottom: 3em; }
+  width: 100%; }
   .work img {
     max-width: 47.5%;
     margin-right: 5%;
@@ -566,3 +569,7 @@ article#work > .work:last-child {
 
 #viewLess {
   display: none; }
+
+hr {
+  margin: 5em 5em 5em 5em;
+  border-color: rgba(0, 0, 0, 0.1); }
