@@ -78,9 +78,12 @@ header {
   header p {
     width: 100%;
     text-align: justify;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    font-weight: 100; }
   header a {
     color: #be4c39; }
+  header #intro-p {
+    font-weight: 900; }
 
 article {
   max-width: 2000px;
@@ -113,7 +116,7 @@ hr {
   height: 1em;
   background-color: #be4c39;
   margin-bottom: .5em;
-  margin-top: 5em; }
+  margin-top: 2em; }
 
 .section-title {
   margin-bottom: .75em; }

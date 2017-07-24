@@ -10,7 +10,7 @@ $myblue: #4B6892;
     height: 18em;
     shape-outside: circle(50%);
     margin-top: .2em;
-
+	
 }
 
 
@@ -117,10 +117,15 @@ header{
 
 		// margin: 0 auto;
 		margin-bottom: 1em;
+		font-weight: 100;
 		
 	}
 	a{
 		color: $myred;
+	}
+	#intro-p{
+		font-weight: 900;
+
 	}
 }
 
@@ -180,7 +185,7 @@ hr{
   height:  1em;
   background-color: #be4c39;
   margin-bottom: .5em;
-  margin-top: 5em;
+  margin-top: 2em;
 
 }
 .section-title{
