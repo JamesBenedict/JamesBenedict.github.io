@@ -9,7 +9,6 @@ $('#viewMore').click(function() {
 });
 
 $('#viewLess').click(function() {
-   
     $('#extra-work').slideUp(200);
     $('html,body').animate({
             scrollTop: $(this).offset().top-1200
