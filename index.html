@@ -3,57 +3,67 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-
 	<title>James Benedict's Portfolio</title>
 	<link rel="icon" href="img/jb-logo.png">
-
 	<link href="css/reset.css" rel="stylesheet">
-		<link href="css/leaflet.css" rel="stylesheet">
-
 	<link href="css/style.css" rel="stylesheet">
-
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/timeline.css">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,700" rel="stylesheet">
-
-
 </head>
 <body>
 
 <header>
-	<h1>James Benedict</h1>
-
 	
-		<!-- <img src="img/MYFACE.jpg" alt="" class="round-wrap">
- -->
-	<div class="header-contain">
+
+	<div class="header-intro">
+		<h1>James Benedict</h1>
+		<p id="tldr">tl;dr journalist who &#60;3 computers will build you cool visuals</p>
+	</div>
+
+		<div class="header-shape">
 		<div class="shape"></div>
-		
-		<p id="intro-p">tl;dr journalist who 	&#60;3 computers will build you cool visuals</p>
+	</div>
 
-		<p>All the way back to my microsoft paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm making more functional graphics for news organizations.</p>
+	<div class="header-text">
 
-		<p>I'm working at Reuters on an investigative project I'd love to discuss after it publishes July 26. I  graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be a architect, chef or photographer.</p>
+		<p>All the way back to my microsoft paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm producing more functional graphics for news organizations.</p>
+
+		<p>I'm working at Reuters on an investigative project I'd love to discuss after it publishes July 31. I graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be a architect, chef or photographer.</p>
 
 		<p>I like taking things apart and then seeing how I can put them back differently (I feel bad for some of my sister's barbies). Check out some of the more recent results below or on my 
 		<a href="https://github.com/JamesBenedict">github</a>. Shoot me an <a href="mailto:jamesbenedict0@gmail.com">email</a> or <a href="http://twitter.com/jamesgbenedict">tweet</a> if you like anything you see.</p>
 
 		<p><a href="#work">work</a> • <a href="#history">history</a> • <a href="#about">about</a> </p> 
-	</div>
+	</div>	
+
 		
 </header>
 
-<!-- <section>
-	<p><i>Work</i></p>
-	<i class="fa fa-2x fa-angle-down" aria-hidden="true"></i>
-
-	
-</section> -->
 <a name="work"></a>
 <article id="work">
 <div class="bar"></div>
 <h2 class="section-title">Selected Work</h2>
-
 	
+	<div id="selectWork"></div>
+
+		<script id="work-template" type="text/x-handlebars-template">
+			<div class="work">
+			<div class="work-img">
+				{{{img}}}
+			</div>
+			
+		    <div class="text">
+		        <h4>{{publication}}</h4>
+		        <h3>{{title}}</h3>
+		        <h4>{{roles}}</h4>
+		        <p>{{{description}}}</p>
+		        {{{button}}}    
+		    </div>
+		    	</div>	
+		    	<hr>
+		</script>	
+
 
 	<!-- <div class="work">
 		<a href="https://jamesbenedict.cartodb.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><img src="img/crime-map.jpg"></a>
@@ -79,68 +89,32 @@
 			<a href="https://jamesbenedict.carto.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><button>View Project</button></a>
 		</div>
 	</div>
- -->
-	
-		<div id="content"></div>
-
-		<script id="work-template" type="text/x-handlebars-template">
-			<div class="work">
-			<div class="work-img">
-				{{{img}}}
-			</div>
-			
-		    <div class="text">
-		        <h4>{{publication}}</h4>
-		        <h3>{{title}}</h3>
-		        <h4>{{roles}}</h4>
-		        <p>{{{description}}}</p>
-		        {{{button}}}    
-		    </div>
-		    	</div>	
-		    	<hr>
-		</script>	
-		
+ -->	
 </article>
-
-
 
 <article id="extra-head">
 	<div class="bar"></div>
 	<h2>Extended Work</h2>
+	<button id="viewMore">View More</button>
 
-	<button id="viewMore">View More
-		</button>
-		
+
 	
-	<section style="margin-bottom:2em;">
-		
-	</section>
 	
+	<section style="margin-bottom:2em;"></section>
 </article>
 
-
 <article id="extra-work">
-	
-
 	<h3>Data</h3>
 		<ol>
-<!-- 			<li><a href="">Campaign Finance in Indiana</a>&nbsp Indiana University Media School </li>
- -->		
-
-
-
-			<li><a href="http://ijec.org/2016/12/07/corporate-cash-helps-fill-indiana-politicians-coffers">Corporate cash helps fill Indiana politicians’ coffers</a> &nbsp Indiana University Media School</li>
- 		<li><a href="https://github.com/JamesBenedict/iu_campus_crime">Campus Crime Scraper and Parser</a> &nbsp Indiana Daily Student </li>
+			<li><a href="http://ijec.org/2016/12/07/corporate-cash-helps-fill-indiana-politicians-coffers">Campaign Finance in Indiana</a> &nbsp Indiana University Media School</li>
+ 			<li><a href="https://github.com/JamesBenedict/iu_campus_crime">Campus Crime Scraper and Parser</a> &nbsp Indiana Daily Student </li>
 			<li><a href="http://www.idsnews.com/article/2016/10/peoples-park-petition-illuminates-many-sides-of-homelessness">People's Park petition illuminates many sides of homelessness</a> &nbsp IDS </li>
 		</ol>
-
-
 
 	<h3>Longform Design</h3>
 		<ol>
 			<li><a href="http://specials.idsnews.com/titleixinvestigation">They Waited Six Weeks</a> &nbsp IDS</li>
 			<li><a href="http://specials.idsnews.com/first-rounds/">The First Rounds</a> &nbsp IDS </li>
-		
 			<li><a href="http://specials.idsnews.com/semester-review/">Semester in Review</a> &nbsp IDS </li>
 			<li><a href="http://specials.idsnews.com/mental-health/">State of Mind</a> &nbsp IDS </li>
 			<li><a href="http://specials.idsnews.com/yaolin/">Friends regret not calling the police after repeated abuse</a> &nbsp IDS </li>
@@ -161,30 +135,26 @@
 		</ol>
 	<h3>Graphics</h3>
 		<ol>
+			<li><a href="jamesbenedict.info/iu_campus_crime/map/index.html">Campus Crime Analysis and Map</a>Indiana University Informatics</li>
 			<li><a href="https://jamesbenedict.carto.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map">Bloomington Crime Map</a></li>
 			<li><a href="http://www.idsnews.com/article/2015/03/the-sunday-after">The Sunday After</a> &nbsp IDS </li>
 			<li><a href="http://www.idsnews.com/article/2015/01/the-brink-and-back">The Brink and Back</a> &nbsp IDS </li>
 			<li><a href="http://www.idsnews.com/article/2015/03/what039s-your-degree-worth">What's your degree worth?</a> &nbsp IDS </li>
-			
 		</ol>
 
 	<h3>Other</h3>
 		<ol>
+
 			<li><a href="https://jamesbenedict.github.io/flipbook/dev/index.html">Flipbook</a>  &nbsp Personal</li>
 			<li><a href="http://www.idsnews.com/article/2015/04/heres-our-comprehensive-coverage-of-hannah-wilsons-murder?_h=9d5188e2-cebe-419f-9906-d8f6cf2cac0f">Hannah Wilson breaking news page</a> &nbsp IDS </li>
 			<li><a href="https://www.youtube.com/watch?v=uw4BIaNbsXI">Video update of Hannah Wilson's murder</a> &nbsp IDS </li>
 			<li><a href="https://www.amazon.com/Best-News-Design-36th-Society/dp/163159110X/ref=sr_1_2?s=books&ie=UTF8&qid=1446249066&sr=1-2">The Best of News Design</a> &nbsp Society for News Design</li>
-
-
 		</ol>
 </article>
 
 
 <section>
 	<button id="viewLess">View Less</button>
-
-	<!-- <p><i>History</i></p>
-	<i class="fa fa-2x fa-angle-down" aria-hidden="true"></i> -->
 </section>
 
 <a name="history"></a>
@@ -192,57 +162,40 @@
 		<div class="bar"></div>
 		<h2 class="section-title" style="margin-bottom: .3em;">History</h2>
 		<p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="img/Benedict-Resume.pdf"> Resume</a></p>
-		<p><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/james-benedict-0503b7a7/"> LinkedIn </p>		
-
-	
+		<p><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/james-benedict-0503b7a7/"> LinkedIn</a> </p>		
 	</article>
 
 <article class="timeline">
 	<ul class="timeline">
-	  <li>
-	      <div class="timeline-badge">
-	        <i class="fa fa-cog" aria-hidden="true"></i>
-	      </div>
+		<li>
+	      <div class="timeline-badge"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
+
 	      <div class="timeline-panel">
 	          <h4>News Apprentice</h4>
 	          <h6>Reuters News Agency</h6>
-	          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-			March 2017 - Present	</p>
-	        
-	              <p>Reported for an investigative series with the national desk.</p>
-	        
-	  </li>
+	          <p><i class="fa fa-clock-o" aria-hidden="true"></i> March 2017 - Present	</p>
+	              <p>Reported for an investigative series about Taser usage with the national desk. Helped populate a database with original reporting and cowrote a story. Conducted interviews, gathered primary documents and researched using media and legal databases. </p>
+		</li>
 
-				   <li class="timeline-inverted">
-				      <div class="timeline-badge">
-				        <i class="fa fa-medkit" aria-hidden="true"></i>
+		<li class="timeline-inverted">
+	    	<div class="timeline-badge"> <i class="fa fa-medkit" aria-hidden="true"></i> </div>
+			
+			<div class="timeline-panel">
+          		<h4>Health Reporting Intern</h4>
+          		<h6>Daily Monitor • Kampala, Uganda</h6>
+          		<p><i class="fa fa-clock-o" aria-hidden="true"></i> May 2016 - June 2016 </p>
+	        	<p>Reported on HIV across Uganda and created two stories, one for a local audience and another for an American one. Interviewed people living with the disorder, expert researchers, NGOS and government officials. Studied at African Centre for Media Excellence</p>
+	  	</li>
 
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Health Reporting Intern</h4>
-				          <h6>Daily Monitor • Kampala, Uganda</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-
-							May 2016 - June 2016</p>
-				        <p>Reported on HIV across Uganda and created two stories, one for a local audience and another for an American one. Interviewed people living with the disorder, expert researchers, NGOS and government officials. Studied at African Centre for Media Excellence</p>
-				  </li>
-
-				  <li>
-				      <div class="timeline-badge">
-				        <i class="fa fa-pencil" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Investigative Reporter</h4>
-				          <h6>Indiana Daily Student</h6>
-				          <p>
-				          	<i class="fa fa-clock-o" aria-hidden="true"></i>
-							January 2016 - Present
-						  </p>
-				        
-			              <p>Worked to create an automated program that maps all crimes on or near Indiana University's campus. Also analyzed data for multiple assignments on the investigative desk.</p>
-				        
-				  </li>
+		<li>
+		  <div class="timeline-badge"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
+		  
+		  <div class="timeline-panel">
+		      <h4>Investigative Reporter</h4>
+		      <h6>Indiana Daily Student</h6>
+		      <p> <i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present </p>
+		      <p>Worked to create an automated program that maps all crimes on or near Indiana University's campus. Also analyzed data for multiple assignments on the investigative desk.</p>
+		</li>
 
 				  <li class="timeline-inverted">
 				      <div class="timeline-badge">
@@ -255,7 +208,9 @@
 				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
 							July 2015 - December 2015</p>
 				        <p>Managed the Indiana Daily Student's digital presence and team. Oversaw a transition in which our team doubled and role in the newsroom multiplied. Wrote the first online features style guide and developed a template to train print designers in HTML/CSS. Ran social media and analytics. Worked with a contracted CMS to deal with bugs and request new editorial features.</p>
-				        <p><i class="fa fa-trophy" aria-hidden="true"></i> Gold Circle 1st place Digital Media News Fea</p> 
+				       
+						<p><i class="fa fa-trophy" aria-hidden="true"></i>Indiana Collegiate Press Association 2nd Animation / Interactive Graphic, 2017</p> 
+
 				  </li>
 				  <li>
 				      <div class="timeline-badge">
@@ -282,6 +237,8 @@
 				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
 							January 2016 - May 2015	</p>
 				        <p>Produced graphics and multimedia for selected daily stories. Developed custom websites for feature stories. Created social media strategies and reported on Google analytics to the newsroom.</p>  
+				         <p><i class="fa fa-trophy" aria-hidden="true"></i> Columbia Scholastic Press Association
+Gold Circle 1st place Digital Media News Features</p> 
 				        <p><i class="fa fa-trophy" aria-hidden="true"></i> Indiana Collegiate Press Association Best Overall Website</p>  
 				  </li>
 
@@ -322,6 +279,7 @@
 							January 2014 - Present</p>
 				        <p>Acted as a freelance photographer for daily pitches. Worked with section editors on in-depth projects for photo illustrations and portraits. Filled in as photo editor during end of Summer 2015 production due to a family emergency of the original editor</p>
 				        <p><i class="fa fa-trophy" aria-hidden="true"></i> Columbia Scholastic Press Association Gold Crown First Place Photo Illustration</p>
+				        
 				  </li>
 
 				  <li class="timeline-inverted">
@@ -348,94 +306,54 @@
 <article class="skills">
 <div class="bar"></div>
 <h2 class="section-title">Skills</h2>
-	<div class="development eq">
-		<h3>Development</h3>
+	<div class="development">
+
+		<h3>Development </h3>
 		<ul>
-			<li>HTML • CSS 
-				
-				<!--
-				 -->
-			</li> 
-
-			<li>Javascript • JQuery
-				<!-- -->
-			
-			</li>
-			<li>Bootstrap • Skelton
-				
-			</li>
-			<li>Django</li>
-			<li>Git
-				
-				</li>
-			<li>Wordpress
-				
-			</li>
-			<li>Leaflet
-				
-			</li>
-			
-			
-			<li>handlebars
-			</li>	
-			<li>tabletop
-			</li>
-
-			
-			<li>d3
-			</li>	
-				
+			<li>HTML</li>
+			<li>CSS/SASS</li>
+			<li>Javascript/JQuery</li>
+			<li>Clear documentation</li>
+			<li>D3/Highcharts/Tableau</li>
+			<li>Leaflet/Mapbox/CartoDB</li>
+			<li>Handlebars/Tabletop</li>
+			<li>PHP</li>
+			<li>Git</li>
+			<li>Gulp</li>
+			<li>Wordpress</li>	
 		</ul>
 	</div>
 
-	<div class="data eq">
+	<div class="data">
 		<h3>Analysis</h3>
 		<ul>
 			<li>Python</li>
-			<li>Linear Regression</li>
-			<li>Pandas • Numpy</li>
-			<li>PDF to text conversion</li>
-			<li>Jupyter Notebook</li>
-
-			
-			<li>Regular Expressions</li>	
-			<li></li>
+			<li>MySQL</li>
 			<li>Excel</li>
-		
-			
-			<li>Fusion Tables </li>
-
-			
-			
-			
-
-			<li>SQL
-				
-				</li>
-			
-			
-
-			<li>OpenRefine 
-			</li>
+			<li>Web Scraping</li>
+			<li>Regex</li>
+			<li>Relational Database Design</li>
+			<li>Jupyter Notebooks</li>
+			<li>Pandas/Matplot</li>
+			<li>Discrete Mathmatics</li>
+			<li>Statistics/Linear Regression</li>
+			<li>Data Cleaning</li>
 		</ul>
 	</div>
-	<div class="more eq">
+	<div class="more">
 		<h3>Additional</h3>
 			<ul>
-				<li>FOIA Requests</li>
-				<li>DSLR photography
-				</li>
-				<li>Videography</li>
-				<li>AP style</li>
+				<li>DSLR Photography/Videography</li>
 				<li>Illustrator</li>
 				<li>Photoshop</li>
 				<li>InDesign</li>
-			
-				<li>QGIS</li>
-				
-
 				<li>Premiere</li>
-				<li>Audition</li>
+				<li>FOIA Requests</li>
+				<li>AP Style</li>
+				<li>QGIS</li>
+				<li>Nexis</li>
+				<li>Westlaw</li>
+				<li>Invision</li>
 			</ul>
 	</div>
 </article>
@@ -455,12 +373,10 @@
 
 	<p>While soon I might be done with my schooling, I am far from being done with my education. I hope wherever I end up pushes me so I can keep learning better analysis and visualization methods. I hope to create as clean and intuitive of a design as I can.</p>
 
-
-
-
 </article>
 
 </div>
+
 
 <!-- <article class="travel"> -->
 	<!-- <div class="bar"></div>

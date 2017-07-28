@@ -12,9 +12,20 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
 
         $.each( tabletop.sheets("work").all(), function(i, work) {
           var html = template(work);
-          $("#content").append(html);
+          $("#selectWork").append(html);
         });
       }
+
+
+      // function showInfo(data, tabletop) {
+      //   var source   = $("#data-work-template").html();
+      //   var template = Handlebars.compile(source);
+
+      //   $.each( tabletop.sheets("skills").all(), function(i, work) {
+      //     var html = template(work);
+      //     $("#data-work").append(html);
+      //   });
+      // }
     
      
 
