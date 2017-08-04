@@ -80,8 +80,10 @@ i{
 	font-style: italic;
 }
 li{
-	font-size: .9em;
 	padding: .25em 0em .25em;
+	line-height: 1.2em;
+	list-style: none;
+
 }
 button{
 	color: #585858;
@@ -227,6 +229,9 @@ article{
 		max-width: 100%;
 		margin-bottom: 1em;
 	}
+
+	
+
 	.work-img{
 		@include for-size(tablet-portrait) {
 			max-width: 50%;
@@ -247,59 +252,47 @@ article{
 // load more
 #extra-head{
 	h2{
-		width: 33%;
+		// width: 33%;
 		display: inline-block;
 	}
-	button{
-		// left: 5%;
-		// bottom: .8em;
-		// display: inline-block;
-		// position: static;
-		// margin-top: 1em;
-
-		
-	}
-
 
 }
 
 #viewMore{
-	display: inline-block;
-	// width:
-	// margin: 0 auto;
-	position: absolute;
-	left: 45%;
+	// display: inline-block;
+	// // width:
+	// // margin: 0 auto;
+	// position: absolute;
+	// left: 50%;
+	// margin-top: 0em;
+	position: relative;
+	margin: 0 auto;
+	// left: 45%;
+
+	left: 5%;
 	}
 #viewLess{
 		margin-top: 0em;
 		position: relative;
 		margin: 0 auto;
-		left: 45%;
+		left: 5%;
 		bottom: .8em;
 		// position: absolute;
 		// left: 45%;
 	}
 
-#extra-work{
+#extra-work-container{
 	display: none;
 	transition: all 600ms ease-in-out;
     -webkit-transition: all 600ms ease-in-out;
     -moz-transition: all 600ms ease-in-out;
     -o-transition: all 600ms ease-in-out;
-	h3{
-		// width: 47.5%;
-		vertical-align: top;
-	}
-	ol{
-		// width: 47%;
-		// display: inline-block;
-		// text-align: left;
-		margin-bottom: 2em;
-	}
+	
+	
+	
 
 	li{
-		border-bottom: 1px solid $borderBottom;
-		padding-top: 1em;
+		// border-bottom: 1px solid $borderBottom;
 		padding-bottom: 1em;
 		transition: .1s all;
 	    transition-property: all;
@@ -307,6 +300,14 @@ article{
 	    transition-timing-function: initial;
 	    transition-delay: initial;
 	    color: $lightgray;
+	    // align: right;
+		br{
+			height: 1000px;
+			width: auto;
+			margin-top: 100em;
+			margin-bottom: 100em;
+			padding: 100em 0 100em;
+		}
 
 		a{
 			color: $mygray;
@@ -318,20 +319,25 @@ article{
 			border-bottom: none;
 		}
 		&:hover{
+			width: 100%;
 			border-bottom: 3px solid #722d22;
-			padding-bottom: 2em;
+			// padding-bottom: 1em;
 			background-color: rgba(190,	76,	57, .9);
 			color: white;
-			padding-left: 1em;
+			// padding-left: 1em;
+			// padding-top: 1em;
+			padding: 1em 1em 1em 1em;
+
 			a{
 				color: white;	
 			}
 		}
 		@include for-size(tablet-portrait) {
-			max-width: 75%
+			max-width: 45%;
+			display: inline-block;
 	  	}
 	  	@include for-size(tablet-landscape) {
-			max-width: 60%
+			max-width: 40%;
 	  	}
 	}
 

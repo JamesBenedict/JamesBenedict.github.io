@@ -2,11 +2,10 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
 
       $(document).ready( function() {
         Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showInfo,
+                         // callback: showWork,
                          parseNumbers: true } );
       });
-        
-      function showInfo(data, tabletop) {
+      function showWork(data, tabletop) {
         var source   = $("#work-template").html();
         var template = Handlebars.compile(source);
 
@@ -14,18 +13,25 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
           var html = template(work);
           $("#selectWork").append(html);
         });
-      }
+      };
 
 
-      // function showInfo(data, tabletop) {
-      //   var source   = $("#data-work-template").html();
-      //   var template = Handlebars.compile(source);
 
-      //   $.each( tabletop.sheets("skills").all(), function(i, work) {
-      //     var html = template(work);
-      //     $("#data-work").append(html);
-      //   });
-      // }
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showExtraWork,
+                         parseNumbers: true } );
+      });
+
+      function showExtraWork(data, tabletop) {
+        var source   = $("#extra-work-template").html();
+        var template = Handlebars.compile(source);
+
+        $.each( tabletop.sheets("extra-work").all(), function(i, extraWork) {
+          var html = template(extraWork);
+          $("#extra-work").append(html);
+        });
+      };
     
      
 

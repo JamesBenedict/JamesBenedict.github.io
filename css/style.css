@@ -53,8 +53,9 @@ i {
   font-style: italic; }
 
 li {
-  font-size: .9em;
-  padding: .25em 0em .25em; }
+  padding: .25em 0em .25em;
+  line-height: 1.2em;
+  list-style: none; }
 
 button {
   color: #585858;
@@ -174,34 +175,27 @@ article {
     margin-left: 4%; } }
 
 #extra-head h2 {
-  width: 33%;
   display: inline-block; }
 
 #viewMore {
-  display: inline-block;
-  position: absolute;
-  left: 45%; }
+  position: relative;
+  margin: 0 auto;
+  left: 5%; }
 
 #viewLess {
   margin-top: 0em;
   position: relative;
   margin: 0 auto;
-  left: 45%;
+  left: 5%;
   bottom: .8em; }
 
-#extra-work {
+#extra-work-container {
   display: none;
   transition: all 600ms ease-in-out;
   -webkit-transition: all 600ms ease-in-out;
   -moz-transition: all 600ms ease-in-out;
   -o-transition: all 600ms ease-in-out; }
-  #extra-work h3 {
-    vertical-align: top; }
-  #extra-work ol {
-    margin-bottom: 2em; }
-  #extra-work li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-top: 1em;
+  #extra-work-container li {
     padding-bottom: 1em;
     transition: .1s all;
     transition-property: all;
@@ -209,34 +203,41 @@ article {
     transition-timing-function: initial;
     transition-delay: initial;
     color: #a3a3a3; }
-    #extra-work li a {
+    #extra-work-container li br {
+      height: 1000px;
+      width: auto;
+      margin-top: 100em;
+      margin-bottom: 100em;
+      padding: 100em 0 100em; }
+    #extra-work-container li a {
       color: #4d4d4d; }
-    #extra-work li:first-child {
+    #extra-work-container li:first-child {
       padding-top: .5em; }
-    #extra-work li:last-child {
+    #extra-work-container li:last-child {
       border-bottom: none; }
-    #extra-work li:hover {
+    #extra-work-container li:hover {
+      width: 100%;
       border-bottom: 3px solid #722d22;
-      padding-bottom: 2em;
       background-color: rgba(190, 76, 57, 0.9);
       color: white;
-      padding-left: 1em; }
-      #extra-work li:hover a {
+      padding: 1em 1em 1em 1em; }
+      #extra-work-container li:hover a {
         color: white; }
     @media (min-width: 600px) {
-      #extra-work li {
-        max-width: 75%; } }
+      #extra-work-container li {
+        max-width: 45%;
+        display: inline-block; } }
     @media (min-width: 900px) {
-      #extra-work li {
-        max-width: 60%; } }
+      #extra-work-container li {
+        max-width: 40%; } }
   @media (min-width: 600px) {
-    #extra-work h3 {
+    #extra-work-container h3 {
       width: 47.5%;
       vertical-align: top;
       display: inline-block;
       text-align: right;
       margin-right: 1em; }
-    #extra-work ol {
+    #extra-work-container ol {
       width: 47.5%;
       display: inline-block;
       text-align: left;
