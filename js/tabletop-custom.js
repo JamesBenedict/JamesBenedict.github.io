@@ -2,7 +2,7 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
 
       $(document).ready( function() {
         Tabletop.init( { key: public_spreadsheet_url,
-                         // callback: showWork,
+                         callback: showWork,
                          parseNumbers: true } );
       });
       function showWork(data, tabletop) {
