@@ -16,7 +16,7 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
       };
 
 
-
+      // extrawork
       $(document).ready( function() {
         Tabletop.init( { key: public_spreadsheet_url,
                          callback: showExtraWork,
@@ -30,6 +30,40 @@ var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_
         $.each( tabletop.sheets("extra-work").all(), function(i, extraWork) {
           var html = template(extraWork);
           $("#extra-work").append(html);
+        });
+      };
+
+      // timeline
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showTimeline,
+                         parseNumbers: true } );
+      });
+
+      function showTimeline(data, tabletop) {
+        var source   = $("#timeline-template").html();
+        var template = Handlebars.compile(source);
+
+        $.each( tabletop.sheets("timeline").all(), function(i, timeline) {
+          var html = template(timeline);
+          $("#timeline").append(html);
+        });
+      };
+
+      // skills
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showSkills,
+                         parseNumbers: true } );
+      });
+
+      function showSkills(data, tabletop) {
+        var source   = $("#skills-template").html();
+        var template = Handlebars.compile(source);
+
+        $.each( tabletop.sheets("skills").all(), function(i, skills) {
+          var html = template(skills);
+          $("#skills").append(html);
         });
       };
     

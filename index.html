@@ -27,9 +27,9 @@
 
 	<div class="header-text">
 
-		<p>All the way back to my microsoft paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm producing more functional graphics for news organizations.</p>
+		<p>All the way back to my Microsoft Paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm producing more functional graphics for news organizations.</p>
 
-		<p>I'm working at Reuters on an investigative project I'd love to discuss after it publishes July 31. I graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be a architect, chef or photographer.</p>
+		<<a href=""></a>n investigative project about Taser I'd love to discuss after it publishes August 8. I graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be an architect, chef or photographer.</p>
 
 		<p>I like taking things apart and then seeing how I can put them back differently (I feel bad for some of my sister's barbies). Check out some of the more recent results below or on my 
 		<a href="https://github.com/JamesBenedict">github</a>. Shoot me an <a href="mailto:jamesbenedict0@gmail.com">email</a> or <a href="http://twitter.com/jamesgbenedict">tweet</a> if you like anything you see.</p>
@@ -56,7 +56,7 @@
 		    <div class="text">
 		        <h4>{{publication}}</h4>
 		        <h3>{{title}}</h3>
-		        <h4>{{roles}}</h4>
+		        <h4>{{{roles}}}</h4>
 		        <p>{{{description}}}</p>
 		        {{{button}}}
 
@@ -64,43 +64,13 @@
 				{{{line}}}
 		    	</div>	
 		    	
-		</script>	
-
-
-	<!-- <div class="work">
-		<a href="https://jamesbenedict.cartodb.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><img src="img/crime-map.jpg"></a>
-		
-		<div class="text">
-
-			<h5>Indiana Daily Student</h5>
-			<h3>Bloomington Crime Map</h3>
-			<h4>Data editor • Graphics</h4>
-			<p>I scraped PDFS from the campus police's website and mapped the crimes against the location of blue-light emergency beacons.</p>
-			<a href="https://jamesbenedict.carto.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><button>View Project</button></a>
-		</div>
-	</div>
-	<div class="work">
-		<a href="https://jamesbenedict.cartodb.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><img src="img/crime-map.jpg"></a>
-		
-		<div class="text">
-
-			<h5>Indiana Daily Student</h5>
-			<h3>Bloomington Crime Map</h3>
-			<h4>Data editor • Graphics</h4>
-			<p>I scraped PDFS from the campus police's website and mapped the crimes against the location of blue-light emergency beacons.</p>
-			<a href="https://jamesbenedict.carto.com/viz/886db910-0030-11e6-9f73-0e8c56e2ffdb/embed_map"><button>View Project</button></a>
-		</div>
-	</div>
- -->	
+		</script>		
 </article>
 
 <article id="extra-head">
 	<div class="bar"></div>
 	<h2>Extended Work</h2>
 
-
-	
-	
 	<section style="margin-bottom:2em;"></section>
 </article>
 	<button id="viewMore">View More</button>
@@ -111,18 +81,11 @@
 
 	<ol>
 		<script id="extra-work-template" type="text/x-handlebars-template">
-			
-			
 		    <h3>{{category}}</h3>
 		    <li><a href="{{link}}">{{title}}</a> &nbsp {{publication}}
 		   	</li>
-		    
-		   
-
 		</script>
-	 </ol>		
-
-	
+	 </ol>			
 </article>
 
 
@@ -139,141 +102,23 @@
 	</article>
 
 <article class="timeline">
+
+	<div id="timeline"></div>
 	<ul class="timeline">
-		<li>
-	      <div class="timeline-badge"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
-
-	      <div class="timeline-panel">
-	          <h4>News Apprentice</h4>
-	          <h6>Reuters News Agency</h6>
-	          <p><i class="fa fa-clock-o" aria-hidden="true"></i> March 2017 - Present	</p>
-	              <p>Reported for an investigative series about Taser usage with the national desk. Helped populate a database with original reporting and cowrote a story. Conducted interviews, gathered primary documents and researched using media and legal databases. </p>
-		</li>
-
-		<li class="timeline-inverted">
-	    	<div class="timeline-badge"> <i class="fa fa-medkit" aria-hidden="true"></i> </div>
-			
+	<script id="timeline-template" type="text/x-handlebars-template">
+		<li class="{{panel-class}}">
+			<div class="timeline-badge"> <i class="{{icon}}" aria-hidden="true"></i></div>
 			<div class="timeline-panel">
-          		<h4>Health Reporting Intern</h4>
-          		<h6>Daily Monitor • Kampala, Uganda</h6>
-          		<p><i class="fa fa-clock-o" aria-hidden="true"></i> May 2016 - June 2016 </p>
-	        	<p>Reported on HIV across Uganda and created two stories, one for a local audience and another for an American one. Interviewed people living with the disorder, expert researchers, NGOS and government officials. Studied at African Centre for Media Excellence</p>
-	  	</li>
-
-		<li>
-		  <div class="timeline-badge"> <i class="fa fa-pencil" aria-hidden="true"></i> </div>
-		  
-		  <div class="timeline-panel">
-		      <h4>Investigative Reporter</h4>
-		      <h6>Indiana Daily Student</h6>
-		      <p> <i class="fa fa-clock-o" aria-hidden="true"></i> January 2016 - Present </p>
-		      <p>Worked to create an automated program that maps all crimes on or near Indiana University's campus. Also analyzed data for multiple assignments on the investigative desk.</p>
+				<h4>{{job}}</h4>
+				<h6>{{employer}}</h6>
+				<p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date}}</p>
+				<p>{{job-description}}</p>
+				<p>{{{awards}}}</p>
+			</div>
 		</li>
 
-				  <li class="timeline-inverted">
-				      <div class="timeline-badge">
-				        <i class="fa fa-code" aria-hidden="true"></i>
+	</script>
 
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Digital Director</h4>
-				          <h6>Indiana Daily Student</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							July 2015 - December 2015</p>
-				        <p>Managed the Indiana Daily Student's digital presence and team. Oversaw a transition in which our team doubled and role in the newsroom multiplied. Wrote the first online features style guide and developed a template to train print designers in HTML/CSS. Ran social media and analytics. Worked with a contracted CMS to deal with bugs and request new editorial features.</p>
-				       
-						<p><i class="fa fa-trophy" aria-hidden="true"></i>Indiana Collegiate Press Association 2nd Animation / Interactive Graphic, 2017</p> 
-
-				  </li>
-				  <li>
-				      <div class="timeline-badge">
-				        <i class="fa fa-camera-retro" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Basketball Beat Photographer</h4>
-				          <h6>Indiana Daily Student</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							November 2015 - March 2016</p>
-				        <p>Followed the men's basketball team from the preseason to the Sweet 16.</p>
-				  </li>
-
-				  
-				  <li class="timeline-inverted">
-				      <div class="timeline-badge">
-				        <i class="fa fa-code" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Digital Editor</h4>
-				          <h6>Indiana Daily Student</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							January 2016 - May 2015	</p>
-				        <p>Produced graphics and multimedia for selected daily stories. Developed custom websites for feature stories. Created social media strategies and reported on Google analytics to the newsroom.</p>  
-				         <p><i class="fa fa-trophy" aria-hidden="true"></i> Columbia Scholastic Press Association
-Gold Circle 1st place Digital Media News Features</p> 
-				        <p><i class="fa fa-trophy" aria-hidden="true"></i> Indiana Collegiate Press Association Best Overall Website</p>  
-				  </li>
-
-				  <li>
-				      <div class="timeline-badge">
-				        <i class="fa fa-crop" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Layout Designer</h4>
-				          <h6>Society For News Design</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							May 2014 - Present</p>
-				        <p>Designed multiple spreads for the Society of News Design Best of Design book.</p> 
-				  </li>
-
-				  <li class="timeline-inverted">
-				      <div class="timeline-badge">
-				        <i class="fa fa-code" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Front End Developer</h4>
-				          <h6>Indiana University Student Television</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							January 2016 - May 2016	</p>
-				        <p>Setup and designed a new Wordpress website for IUSTV. Trained staff how to edit the website.</p>
-				  </li>
-				  <li>
-				      <div class="timeline-badge">
-				        <i class="fa fa-camera-retro" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Photographer</h4>
-				          <h6>Indiana Daily Student</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							January 2014 - Present</p>
-				        <p>Acted as a freelance photographer for daily pitches. Worked with section editors on in-depth projects for photo illustrations and portraits. Filled in as photo editor during end of Summer 2015 production due to a family emergency of the original editor</p>
-				        <p><i class="fa fa-trophy" aria-hidden="true"></i> Columbia Scholastic Press Association Gold Crown First Place Photo Illustration</p>
-				        
-				  </li>
-
-				  <li class="timeline-inverted">
-				      <div class="timeline-badge">
-				        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-
-				      </div>
-				      <div class="timeline-panel">
-				          <h4>Bachelor of Arts</h4>
-				          <h6>Indiana University Bloomington</h6>
-				          <p><i class="fa fa-clock-o" aria-hidden="true"></i>
-							August 2013 - Present</p>
-				        <p>Studied journalism and informatics at Indiana University.</p>
-						
-				        <p><i class="fa fa-calendar-check-o" aria-hidden="true"></i> Expected Graduation May 2017</p>
-				        <p><i class="fa fa-book" aria-hidden="true"></i> GPA 3.640</p>
-
-				  </li>
-
-  					
-			  </ul>
 </article>
 
 <article class="skills">
@@ -340,11 +185,13 @@ Gold Circle 1st place Digital Media News Features</p>
 	<div class="bar"></div>
 	<h2 class="section-title">About</h2>
 
-	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicking an airhorn. During the interview if you get me talking about something I like you might need me to slow down to understand every word. I'm an excitable person who is having a great time learning how to make better graphics.</p>
+	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicking an airhorn. During the interview if you get me talking about something I like you might need me to slow down to understand every word. I'm an excitable person who isn't afraid to express my passions.</p>
 
-	<p>I've never been good at staying satisfied with my current understanding of technology. I must have given myself half a dozen heart attacks learning how to jailbreak my phone or messing with my computer's BIOS, but I love the rush of discovery. I promise if you let me into your system I won't break anything but I might annoy you with how many questions I ask.</p>
+	<p>I've never been good at staying satisfied with a working understanding of my technology. I like that it is constantly updating and there is always more to learn. I must have given myself a dozen heart attacks jailbreaking my phone or playing with my computer's BIOS, but I love the rush of discovery. I promise if you let me into your system I won't break anything but expect plenty of question about how it works.</p>
 
-	<p>While soon I might be done with my schooling, I am far from being done with my education. I hope wherever I end up pushes me so I can keep learning better analysis and visualization methods. I hope to create as clean and intuitive of a design as I can.</p>
+	<p>While tech fulfills my experimental interests, my passion is to bring more accountability into our society. Creating clear journalism has never been more important than today with the amount of misinformation spreading and memory holes forming. I could have been a cynic but chose to be a journalist. The best way to hold institutions accountable is through independent review and a hard look at their data. The best way to incite change is by telling clear and compelling stories that make the public reevaluate their positions. </p>
+	
+	<p>I'm a quick learner who has told award winning stories with photos, layout, graphics and words and want to further my education producing data driven visuals in the professional world. </p>
 
 </article>
 

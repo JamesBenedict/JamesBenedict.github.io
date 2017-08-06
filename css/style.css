@@ -223,14 +223,11 @@ article {
       padding: 1em 1em 1em 1em; }
       #extra-work-container li:hover a {
         color: white; }
-    @media (min-width: 600px) {
-      #extra-work-container li {
-        max-width: 45%;
-        display: inline-block; } }
     @media (min-width: 900px) {
       #extra-work-container li {
-        max-width: 40%; } }
-  @media (min-width: 600px) {
+        max-width: 40%;
+        display: inline-block; } }
+  @media (min-width: 900px) {
     #extra-work-container h3 {
       width: 47.5%;
       vertical-align: top;

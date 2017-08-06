@@ -332,16 +332,18 @@ article{
 				color: white;	
 			}
 		}
-		@include for-size(tablet-portrait) {
-			max-width: 45%;
-			display: inline-block;
-	  	}
+		// @include for-size(tablet-portrait) {
+		// 	max-width: 45%;
+		// 	display: inline-block;
+	 //  	}
 	  	@include for-size(tablet-landscape) {
 			max-width: 40%;
+			display: inline-block;
+
 	  	}
 	}
 
-	@include for-size(tablet-portrait){
+	@include for-size(tablet-landscape){
 		h3{
 		width: 47.5%;
 		vertical-align: top;
