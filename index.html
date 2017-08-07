@@ -2,164 +2,134 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
+	<meta content="width=device-width" name="viewport">
 	<title>James Benedict's Portfolio</title>
-	<link rel="icon" href="img/jb-logo.png">
+	<link href="img/jb-logo.png" rel="icon">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/timeline.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,700" rel="stylesheet">
 </head>
+
 <body>
 
-<header>
-	
-
-	<div class="header-intro">
-		<h1>James Benedict</h1>
-		<p id="tldr">tl;dr journalist who &#60;3 computers will build you cool visuals</p>
-	</div>
-
+	<header>
+		<div class="header-intro">
+			<h1>James Benedict</h1>
+			<p id="tldr">tl;dr journalist who &#60;3 computers will build you cool visuals</p>
+		</div>
 		<div class="header-shape">
-		<div class="shape"></div>
-	</div>
-
-	<div class="header-text">
-
-		<p>All the way back to my Microsoft Paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm producing more functional graphics for news organizations.</p>
-
-		<<a href=""></a>n investigative project about Taser I'd love to discuss after it publishes August 8. I graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be an architect, chef or photographer.</p>
-
-		<p>I like taking things apart and then seeing how I can put them back differently (I feel bad for some of my sister's barbies). Check out some of the more recent results below or on my 
-		<a href="https://github.com/JamesBenedict">github</a>. Shoot me an <a href="mailto:jamesbenedict0@gmail.com">email</a> or <a href="http://twitter.com/jamesgbenedict">tweet</a> if you like anything you see.</p>
-
-		<p><a href="#work">work</a> • <a href="#history">history</a> • <a href="#about">about</a> </p> 
-	</div>	
-
-		
-</header>
-
-<a name="work"></a>
-<article id="work">
-<div class="bar"></div>
-<h2 class="section-title">Selected Work</h2>
-	
-	<div id="selectWork"></div>
-
+			<div class="shape"></div>
+		</div>
+		<div class="header-text">
+			<p>All the way back to my Microsoft Paint days I've been using computers to try to impress people. While I might long for those days of artistic liberty, now I'm producing more functional graphics for news organizations.</p>
+			<p>I'm working on an investigative project about Taser with Reuters' National Affairs desk I'd love to discuss after it publishes August 8. I graduated Indiana University with a Bachelors of Arts in Journalism and a Certificate (28 credits) in Informatics. In past career lives I have wanted to be an architect, chef or photographer.</p>
+			<p>I like taking things apart and then seeing how I can put them back differently (I feel bad for some of my sister's barbies). Check out some of the more recent results below or on my <a href="https://github.com/JamesBenedict">github</a>. Shoot me an <a href="mailto:jamesbenedict0@gmail.com">email</a> or <a href="http://twitter.com/jamesgbenedict">tweet</a> if you like anything you see.</p>
+			<p><a href="#work">work</a> &#9679; <a href="#history">history</a> &#9679; <a href="#about">about</a></p>
+		</div>
+	</header>
+	<article id="work" name="work">
+		<div class="bar"></div>
+		<h2 class="section-title">Selected Work</h2>
+		<div id="selectWork"></div>
 		<script id="work-template" type="text/x-handlebars-template">
-			<div class="work">
-			<div class="work-img">
-				{{{img}}}
-			</div>
-			
-		    <div class="text">
-		        <h4>{{publication}}</h4>
-		        <h3>{{title}}</h3>
-		        <h4>{{{roles}}}</h4>
-		        <p>{{{description}}}</p>
-		        {{{button}}}
+		                <div class="work">
+		                <div class="work-img">
+		                    {{{img}}}
+		                </div>
+		                
+		                <div class="text">
+		                    <h4>{{publication}}</h4>
+		                    <h3>{{title}}</h3>
+		                    <h4>{{{roles}}}</h4>
+		                    <p>{{{description}}}</p>
+		                    {{{button}}}
 
-		    </div>
-				{{{line}}}
-		    	</div>	
-		    	
-		</script>		
-</article>
-
-<article id="extra-head">
-	<div class="bar"></div>
-	<h2>Extended Work</h2>
-
-	<section style="margin-bottom:2em;"></section>
-</article>
-	<button id="viewMore">View More</button>
-
-<article id="extra-work-container">
-	
-	<div id="extra-work"></div>
-
-	<ol>
-		<script id="extra-work-template" type="text/x-handlebars-template">
-		    <h3>{{category}}</h3>
-		    <li><a href="{{link}}">{{title}}</a> &nbsp {{publication}}
-		   	</li>
+		                </div>
+		                    {{{line}}}
+		                    </div>  
+		                    
 		</script>
-	 </ol>			
-</article>
-
-
-<section>
-	<button id="viewLess">View Less</button>
-</section>
-
-<a name="history"></a>
+	</article>
+	<article id="extra-head">
+		<div class="bar"></div>
+		<h2>Extended Work</h2>
+		<section style="margin-bottom:2em;"></section>
+	</article><button id="viewMore">View More</button>
+	<article id="extra-work-container">
+		<div id="extra-work"></div>
+		<div style="margin-left: 2em">
+			<script id="extra-work-template" type="text/x-handlebars-template">
+			                  <h3>{{category}}</h3>
+			                  <li><a href="{{link}}">{{title}}</a> &nbsp {{publication}}
+			                  </li>
+			</script>
+		</div>
+	</article>
+	<section>
+		<button id="viewLess">View Less</button>
+	</section><a id="history" name="history"></a>
 	<article>
 		<div class="bar"></div>
 		<h2 class="section-title" style="margin-bottom: .3em;">History</h2>
-		<p><i class="fa fa-file-pdf-o" aria-hidden="true"></i><a href="img/Benedict-Resume.pdf"> Resume</a></p>
-		<p><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/james-benedict-0503b7a7/"> LinkedIn</a> </p>		
+		<p><i aria-hidden="true" class="fa fa-file-pdf-o"></i> <a href="misc/Benedict-Resume-Links.pdf">Resume</a></p>
+		<p><i aria-hidden="true" class="fa fa-linkedin-square"></i> <a href="https://www.linkedin.com/in/james-benedict-0503b7a7/">LinkedIn</a></p>
 	</article>
+	<article class="timeline">
+		<div id="timeline"></div>
+		<div class="timeline" style="margin-left: 2em">
+			<script id="timeline-template" type="text/x-handlebars-template">
+			              <li class="{{panel-class}}">
+			                  <div class="timeline-badge"> <i class="{{icon}}" aria-hidden="true"></i></div>
+			                  <div class="timeline-panel">
+			                      <h4>{{job}}</h4>
+			                      <h6>{{employer}}</h6>
+			                      <p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date}}</p>
+			                      <p>{{job-description}}</p>
+			                      <p>{{{awards}}}</p>
+			                  </div>
+			              </li>
 
-<article class="timeline">
-
-	<div id="timeline"></div>
-	<ul class="timeline">
-	<script id="timeline-template" type="text/x-handlebars-template">
-		<li class="{{panel-class}}">
-			<div class="timeline-badge"> <i class="{{icon}}" aria-hidden="true"></i></div>
-			<div class="timeline-panel">
-				<h4>{{job}}</h4>
-				<h6>{{employer}}</h6>
-				<p><i class="fa fa-clock-o" aria-hidden="true"></i> {{date}}</p>
-				<p>{{job-description}}</p>
-				<p>{{{awards}}}</p>
-			</div>
-		</li>
-
-	</script>
-
-</article>
-
-<article class="skills">
-<div class="bar"></div>
-<h2 class="section-title">Skills</h2>
-	<div class="development">
-
-		<h3>Development </h3>
-		<ul>
-			<li>HTML</li>
-			<li>CSS/SASS</li>
-			<li>Javascript/JQuery</li>
-			<li>Clear documentation</li>
-			<li>D3/Highcharts/Tableau</li>
-			<li>Leaflet/Mapbox/CartoDB</li>
-			<li>Handlebars/Tabletop</li>
-			<li>PHP</li>
-			<li>Git</li>
-			<li>Gulp</li>
-			<li>Wordpress</li>	
-		</ul>
-	</div>
-
-	<div class="data">
-		<h3>Analysis</h3>
-		<ul>
-			<li>Python</li>
-			<li>MySQL</li>
-			<li>Excel</li>
-			<li>Web Scraping</li>
-			<li>Regex</li>
-			<li>Relational Database Design</li>
-			<li>Jupyter Notebooks</li>
-			<li>Pandas/Matplot</li>
-			<li>Discrete Mathmatics</li>
-			<li>Statistics/Linear Regression</li>
-			<li>Data Cleaning</li>
-		</ul>
-	</div>
-	<div class="more">
-		<h3>Additional</h3>
+			</script>
+		</div>
+	</article>
+	<article class="skills">
+		<div class="bar"></div>
+		<h2 class="section-title">Skills</h2>
+		<div class="development">
+			<h3>Development</h3>
+			<ul>
+				<li>HTML</li>
+				<li>CSS/SASS</li>
+				<li>Javascript/JQuery</li>
+				<li>Clear documentation</li>
+				<li>D3/Highcharts/Tableau</li>
+				<li>Leaflet/Mapbox/CartoDB</li>
+				<li>Handlebars/Tabletop</li>
+				<li>PHP</li>
+				<li>Git</li>
+				<li>Gulp</li>
+				<li>Wordpress</li>
+			</ul>
+		</div>
+		<div class="data">
+			<h3>Analysis</h3>
+			<ul>
+				<li>Python</li>
+				<li>MySQL</li>
+				<li>Excel</li>
+				<li>Web Scraping</li>
+				<li>Regex</li>
+				<li>Relational Database Design</li>
+				<li>Jupyter Notebooks</li>
+				<li>Pandas/Matplot</li>
+				<li>Discrete Mathmatics</li>
+				<li>Statistics/Linear Regression</li>
+				<li>Data Cleaning</li>
+			</ul>
+		</div>
+		<div class="more">
+			<h3>Additional</h3>
 			<ul>
 				<li>DSLR Photography/Videography</li>
 				<li>Illustrator</li>
@@ -173,81 +143,62 @@
 				<li>Westlaw</li>
 				<li>Invision</li>
 			</ul>
+		</div>
+
+	</article>
+
+	<a id="about" name="about"></a>
+	<div class='me'>
+
+		<article>
+			<img alt="" class="hidden-small" src="img/insta1.png">
+			<div class="bar"></div>
+			<h2 class="section-title">About</h2>
+			<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicking an airhorn. If I'm talking about something I love, you might need to ask me to slow down to catch every word. I'm an excitable person who isn't afraid to express my passions.</p>
+			<p>I've never been good at staying satisfied with a working understanding of my technology. I like that it is constantly updating and there is always more to learn. I must have given myself a dozen heart attacks jailbreaking my phone or playing with my computer's BIOS, but I love the rush of discovery. I promise if you let me into your system I won't break anything but expect plenty of question about how it works.</p>
+			<p>While tech fulfills my experimental interests, my passion is to bring more accountability into our society. Creating clear journalism has never been more important than today with the amount of misinformation spreading and memory holes forming. I could have been a cynic but chose to be a journalist. The best way to hold institutions accountable is through independent review. The best way to incite change is by telling clear and compelling stories that make the public reevaluate their positions.</p>
+			<p>I'm a quick learner who has told award winning stories with photos, layout, graphics and words and want to further my education producing data driven visuals in the professional world.</p>
+		</article>
+
 	</div>
-</article>
-
-<a name="about"></a>
-<div class='me'>
-
-<article>
-	<img src="img/insta1.png"  class="hidden-large" alt="">
-
-	<div class="bar"></div>
-	<h2 class="section-title">About</h2>
-
-	<p>We should probably get this out of the way, if you call me with an offer I might respond by mimicking an airhorn. During the interview if you get me talking about something I like you might need me to slow down to understand every word. I'm an excitable person who isn't afraid to express my passions.</p>
-
-	<p>I've never been good at staying satisfied with a working understanding of my technology. I like that it is constantly updating and there is always more to learn. I must have given myself a dozen heart attacks jailbreaking my phone or playing with my computer's BIOS, but I love the rush of discovery. I promise if you let me into your system I won't break anything but expect plenty of question about how it works.</p>
-
-	<p>While tech fulfills my experimental interests, my passion is to bring more accountability into our society. Creating clear journalism has never been more important than today with the amount of misinformation spreading and memory holes forming. I could have been a cynic but chose to be a journalist. The best way to hold institutions accountable is through independent review and a hard look at their data. The best way to incite change is by telling clear and compelling stories that make the public reevaluate their positions. </p>
-	
-	<p>I'm a quick learner who has told award winning stories with photos, layout, graphics and words and want to further my education producing data driven visuals in the professional world. </p>
-
-</article>
-
-</div>
 
 
-<!-- <article class="travel"> -->
+	<!-- <article class="travel"> -->
 	<!-- <div class="bar"></div>
-	<h2 class="section-title">Where I've Been in the last five ye</h2>
+    <h2 class="section-title">Where I've Been in the last five ye</h2>
 
-	<figure -->
-		<!-- Carmel -->
-		<!-- Bloomington -->
-		<!-- Rome -->
-		<!-- Monza -->
-		<!-- Bologna -->
-		<!-- Siciliy -->
-		<!-- Denver -->
-		<!-- San Fransico -->
-		<!-- Buffalo -->
-		<!-- Toronto -->
-		<!-- Pittsburgh -->
-		<!-- Chicago -->
-		<!-- Kampala -->
-		<!-- Rwenzori -->
-		<!-- Kalangala -->
-		<!-- Merchian falls -->
-		<!-- Dubai -->
-		<!-- Santa Fe -->
-		<!-- Minneapolis -->
-		<!-- Philedelphia -->
-	<!-- 	<div id="map"></div>
-	</figure> -->
-<!-- 	
-</article>
-	 -->
-<!-- <article class="contact">
-	<div class="bar"></div>
-	<h2>Contact</h2>
-
-	<p><a href="la">twitter</a>
-	</p>
-</article>
+    <figure -->
+	<!-- Carmel -->
+	<!-- Bloomington -->
+	<!-- Rome -->
+	<!-- Monza -->
+	<!-- Bologna -->
+	<!-- Siciliy -->
+	<!-- Denver -->
+	<!-- San Fransico -->
+	<!-- Buffalo -->
+	<!-- Toronto -->
+	<!-- Pittsburgh -->
+	<!-- Chicago -->
+	<!-- Kampala -->
+	<!-- Rwenzori -->
+	<!-- Kalangala -->
+	<!-- Merchian falls -->
+	<!-- Dubai -->
+	<!-- Santa Fe -->
+	<!-- Minneapolis -->
+	<!-- Philedelphia -->
+	<!--    <div id="map"></div>
+    </figure> -->
+	<script src="js/jquery-3.1.1.min.js">
+	</script> 
+	<script src="js/handlebars-v4.0.5.js">
+	</script> 
+	<script src="js/tabletop.js" type="text/javascript">
+	</script> 
+	<script src='js/app.js' type="text/javascript">
+	</script> <!-- <script type="text/javascript" src ='js/loadMore.js'></script>
  -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="js/handlebars-v4.0.5.js"></script>
-<script type="text/javascript" src="js/tabletop.js"></script>
-
-<script type="text/javascript" src ='js/tabletop-custom.js'></script>
-<script type="text/javascript" src ='js/loadMore.js'></script>
-<script type="text/javascript" src='js/shapes-polyfill.js'></script>
-<!-- <script type="text/javascript" src='js/leaflet.js'></script>
-<script type="text/javascript" src='js/map.js'></script>
- -->
-
-
-<script></script>
 </body>
+
 </html>

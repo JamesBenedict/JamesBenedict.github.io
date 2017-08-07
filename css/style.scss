@@ -113,7 +113,7 @@ button:hover{
 }
 
 
-.hidden-large{
+.hidden-small{
 	display: none;
 }
 
@@ -410,6 +410,10 @@ article{
         border-top-left-radius: 50%;
         border-bottom-right-radius: 50%;
         border-bottom-left-radius: 50%;
+        @include for-size(tablet-portrait){
+        	left: -2%;
+        }
+
       }
   
   
@@ -611,36 +615,45 @@ article{
 
 }
 
+
+
+
 .me{
 	margin-top: 3em;
-	padding-top: .01em;
+	padding-top: 1em;
 	padding-bottom: 1em;
 	color: white;
 	background-color: $myred;
 	position: relative;
-	background: url('../img/aboutme.jpg') no-repeat center center fixed;
+	background: url('../img/aboutme2.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-attachment: scroll;
 	background-repeat: no-repeat;
+	// height: 766px;
 
 
 	@include for-size(tablet-portrait) {
 		min-height: 800px;
+		padding-top: 9em;
 	}
+	
 	@include for-size(tablet-landscape) {
-		min-height: 1200px;
-	}
-	@include for-size(desktop) {
 		background: none;
 		background-color: $myred;
 		min-height: auto;
 		padding-bottom: 3em;
-		.hidden-large{
+		padding-top: 9em;
+		.hidden-small{
 			display: inline;
 		}
+	}
+	@include for-size(desktop) {
+		padding-top: 3em;
+
+
 	}
 	
 	h2{
@@ -649,10 +662,21 @@ article{
 	}
 	.bar{
 		background-color: white;
+		margin-top: 0em;
+		
 	}
 	p{
+		width: 100%;
+		margin-bottom: .5em;
+		line-height: 1.2em;
+		@include for-size(tablet-portrait) {
 		width: 60%;
-		margin-bottom: 1em;
+		}
+		@include for-size(tablet-landscape) {
+		width: 45%;
+		}
+		
+
 	}
 	
 	img{
@@ -660,12 +684,27 @@ article{
 		top: 0%;
 		right: 0%;
 		height: 100%;
+		max-width: 50%;
 	}
 
 	
 }
+.me-background-large{
+	position: absolute;
+	background-color: $myred;
+	height: 500px;
+	width: 100%;
+	left: 0%;
+	z-index: -1;
+}
 
-// fuckin ipads
+@include for-size(tablet-landscape) {
+		.hidden-small{
+			display: inline-block;
+		}
+		}
+		
+// fuckin tablets
 @media (min-width: 600px) and (max-width: 640px){
 	header{
 		.header-shape{
