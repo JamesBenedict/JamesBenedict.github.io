@@ -27,11 +27,11 @@ body{
 	margin: 0 auto;
 }
 
-h1,h2,h3{
+h1,h2{
 	font-family: 'Abril Fatface', sans-serif;
 	color: $mygray;
 }
-p, h4,h5,h6,li{
+p, h3, h4,h5,h6,li{
 	font-family: lato, sans-serif;
 }
 h1{	
@@ -48,6 +48,7 @@ h3{
 	font-size: 1.5em;
 	letter-spacing: .02em;
 	line-height: 1.10em;
+	font-weight: 900;
 }
 
 h4{
@@ -219,7 +220,7 @@ article{
 .work{
 	h3{
 		margin-top: .25em;
-		margin-bottom: .5em;
+		margin-bottom: .25em;
 	}
 	p{
 		margin-top: .5em;
