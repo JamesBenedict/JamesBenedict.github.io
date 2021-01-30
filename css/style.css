@@ -146,6 +146,13 @@ header {
       margin-left: 2%;
       display: inline-block; } }
 
+    .header-links > i{
+      margin-right: 3px;
+    }
+    .header-links > a{
+      margin-right: 20px;
+    }
+
 article {
   width: 90%;
   margin-left: 5%; }

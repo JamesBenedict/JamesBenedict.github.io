@@ -1,9 +1,0 @@
-npm install --save gulp-install
-npm install --save gulp-sass
-npm install browser-sync
-npm install --save gulp-useref
-npm install --save run-sequence
-npm install --save gulp-cssnano
-npm install gulp-pipe
-npm install --save-dev gulp-watch
-npm install gulp-if
