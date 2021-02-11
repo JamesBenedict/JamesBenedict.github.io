@@ -1,90 +1,37 @@
-var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1WuhbvcNVx_Rx1_ze50WheK1n2j9djFhyXqABE19NNVc/pubhtml';
+async function portfolio(){
+  console.log('ay')
+  // let request = await fetch("")
+  // let json = await request.json()
+  // console.log(request, json)
+  // console.log('yo')
 
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showWork,
-                         parseNumbers: true } );
-      });
-      function showWork(data, tabletop) {
-        var source   = $("#work-template").html();
-        var template = Handlebars.compile(source);
+  fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vQTD8mBr_86sDT3zVpt7cvpiUqxU10EXuDXejpUNR4PKR9xTHDY15f-jSyeqrpNdTvULU2YAxCBbrm7/pub?alt=json')
+    .then(response => response)
+    .then(data => console.log(data));
+}
 
-        $.each( tabletop.sheets("work").all(), function(i, work) {
-          var html = template(work);
-          $("#selectWork").append(html);
-        });
-      };
+function loadData() {
+  var url="https://docs.google.com/spreadsheets/d/e/2PACX-1vQTD8mBr_86sDT3zVpt7cvpiUqxU10EXuDXejpUNR4PKR9xTHDY15f-jSyeqrpNdTvULU2YAxCBbrm7/pub?output=csv";
+  xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange = function() {
+    if(xmlhttp.readyState == 4 && xmlhttp.status==200){
+      // document.getElementById("display").innerHTML = xmlhttp.responseText;
+      console.log(xmlhttp.responseText)
+    }
+  };
+  xmlhttp.open("GET",url,true);
+  xmlhttp.send(null);
+}
 
 
-      // extrawork
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showExtraWork,
-                         parseNumbers: true } );
-      });
-
-      function showExtraWork(data, tabletop) {
-        var source   = $("#extra-work-template").html();
-        var template = Handlebars.compile(source);
-
-        $.each( tabletop.sheets("extra-work").all(), function(i, extraWork) {
-          var html = template(extraWork);
-          $("#extra-work").append(html);
-        });
-      };
-
-      // timeline
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showTimeline,
-                         parseNumbers: true } );
-      });
-
-      function showTimeline(data, tabletop) {
-        var source   = $("#timeline-template").html();
-        var template = Handlebars.compile(source);
-
-        $.each( tabletop.sheets("timeline").all(), function(i, timeline) {
-          var html = template(timeline);
-          $("#timeline").append(html);
-        });
-      };
-
-      // skills
-      $(document).ready( function() {
-        Tabletop.init( { key: public_spreadsheet_url,
-                         callback: showSkills,
-                         parseNumbers: true } );
-      });
-
-      function showSkills(data, tabletop) {
-        var source   = $("#skills-template").html();
-        var template = Handlebars.compile(source);
-
-        $.each( tabletop.sheets("skills").all(), function(i, skills) {
-          var html = template(skills);
-          $("#skills").append(html);
-        });
-      };
-    
-     
-
-$('#viewMore').click(function() {
-   
-    $('#extra-work-container').slideDown();
-    $('html,body').animate({
-            scrollTop: $(this).offset().top-100
-        }, 1000);
-    $('#viewMore').toggle();
-    $('#viewLess').toggle();           
+function t(){
+  $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/2PACX-1vQTD8mBr_86sDT3zVpt7cvpiUqxU10EXuDXejpUNR4PKR9xTHDY15f-jSyeqrpNdTvULU2YAxCBbrm7/od6/public/values?alt=json", function(data) {
+  //first row "title" column
+  console.log(data.feed.entry[0]);
 });
 
-$('#viewLess').click(function() {
-    $('#extra-work-container').slideUp(300);
-    // $('html,body').animate({
-    //         scrollTop: $(this).offset().top-1200
-    //     }, 1000);
-    $('#viewMore').toggle();
-    $('#viewLess').toggle() ;           
-});
-
+}
+// console.log('wtf')
+//   portfolio()
+//   // loadData()
+//   t()
