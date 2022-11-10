@@ -251,3 +251,7 @@ header {
 .endingSpace {
   height: 20vh;
   width: auto; }
+
+  .inlineDate {
+    color: #a3a3a3
+  }

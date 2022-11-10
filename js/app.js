@@ -7,7 +7,6 @@ async function loadData() {
     if(xmlhttp.readyState == 4 && xmlhttp.status==200){
       // document.getElementById("display").innerHTML = xmlhttp.responseText;
       data = await xmlhttp.responseText
-      console.log(data)
       buildDom(data)
     }
   };
@@ -32,9 +31,8 @@ async function buildDom(data){
     let date = d[3]
     let selected = d[4]
     let block = `
-    <li><a href="${url}"> ${title} </a> ${date}</li>
+    <li><a href="${url}"> ${title} <span class='inlineDate'> ${date}</span> </a></li>
     `
-    console.log(block)
     
     if (selected == 1){
       selects += block
