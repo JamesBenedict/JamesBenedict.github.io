@@ -64,7 +64,7 @@ h3 {
 }
 
 p {
-  line-height: 24px;
+  line-height: 22px;
   font-size: 16px;
 }
 
@@ -83,8 +83,9 @@ a:hover {
 
 li {
   //   padding: 0.25em 0em 0.25em;
-  //   line-height: 24px;
+  line-height: 24px;
   list-style: none;
+  color: teal !important;
 }
 
 article {
@@ -170,9 +171,12 @@ header {
     background-color: white;
     color: $lightgray;
     border-bottom: 3px solid white;
+    font-size: 16px;
+    line-height: 22px;
     // transition: 0.2s background-color ease, 0.2s color ease, padding-left 0.2s ease;
     // transition: 0.1s all ease-out; // transition-property: background-color;
     // transition-duration: 0.5s;
+    transition: 0s padding ease-out;
     // transition-timing-function: initial;
     // transition-delay: initial;
     .inlineDate {
